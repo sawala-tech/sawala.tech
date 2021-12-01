@@ -23,6 +23,7 @@
     "baseUrl": ".",
     "typeRoots": ["./@types", "./types", "./node_modules/@types"],
     "paths": {
+      "@/*": ["./src/*"],
       "@components/*": ["src/components/*"],
       "@types/*": ["@types/*"],
       "@shared/*": ["src/shared/*"],
@@ -32,8 +33,7 @@
       "@static/*": ["public/static/*"],
       "@services/*": ["src/services/*"],
       "@hooks/*": ["src/hooks/*"],
-      "@utils/*": ["src/utils/*"],
-      "@*": ["*"]
+      "@utils/*": ["src/utils/*"]
     }
   },
   "exclude": [

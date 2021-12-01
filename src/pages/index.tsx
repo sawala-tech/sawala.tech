@@ -1,7 +1,9 @@
+import { Hero } from '@/components/Hero'
+
 const LandingPage: React.FC = () => {
   return (
     <>
-      <span tw="text-2xl text-red-600">Installed</span>
+      <Hero />
     </>
   )
 }
