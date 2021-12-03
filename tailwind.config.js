@@ -10,7 +10,12 @@ module.exports = {
     colors: {
       // You may customize your own custom color here
       primary: '#236AF2',
+      secondary: '#FB0046',
       ...colors
+    },
+    fontFamily: {
+      display: ['Inter', 'sans-serif'],
+      body: ['Inter', 'sans-serif']
     },
     extend: {
       backgroundImage: {

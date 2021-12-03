@@ -15,16 +15,16 @@ const ContentText = styled.div`
   ${tw`w-3/5`}
 `
 const ContentTextHead = styled.p`
-  ${tw`h-auto pb-8 pr-4 mb-4 font-medium text-7xl`}
+  ${tw`h-auto pb-8 pr-4 mb-2 font-medium text-7xl`}
   background: linear-gradient(90deg,#0161E7 -3.51%, #FC0C47 46%, #F68F11 75.16%, #FB0246 102.12%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `
 const ContentTextSub = styled.p`
-  ${tw`pr-16 text-gray-500 `}
+  ${tw`pr-16 text-xl text-gray-500 `}
 `
 const ContentImage = styled.div`
-  ${tw`items-center w-2/5`}
+  ${tw`items-center w-2/5 pr-2`}
 `
 
 export const Hero: React.FC = () => {
