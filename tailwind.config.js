@@ -19,7 +19,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero-background': "url('/assets/images/hero-background.png')"
+        'hero-background': "url('/assets/images/hero-background.png')",
+        'formulir-background': "url('/assets/images/formulir-background.png')"
       }
     }
   },

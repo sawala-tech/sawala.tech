@@ -26,7 +26,7 @@ const Button = styled.button<Omit<DefaultButtonProps, 'text'>>`
   ${(props) => props.size === 'md' && tw`px-5 py-3`}
   ${(props) => props.size === 'lg' && tw`py-3 px-9`}
   ${(props) => props.variant === 'primary' && tw`text-white bg-primary`}
-  ${(props) => props.variant === 'secondary' && tw`text-white bg-primary`}
+  ${(props) => props.variant === 'secondary' && tw`bg-white text-primary`}
   ${(props) => props.variant === 'tertiary' && tw`text-black bg-primary`}
 `
 export const DefaultButton: React.FC<DefaultButtonProps> = ({
