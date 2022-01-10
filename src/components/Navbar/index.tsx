@@ -45,6 +45,7 @@ export const Navbar: React.FC = () => {
         <div tw="flex flex-col space-y-8 text-white text-3xl transform translate-y-40">
           <NavLinks
             activeClass="active"
+            offset={-60}
             to="home"
             spy={true}
             smooth={true}
@@ -55,6 +56,7 @@ export const Navbar: React.FC = () => {
           </NavLinks>
           <NavLinks
             activeClass="active"
+            offset={-60}
             to="about"
             spy={true}
             smooth={true}
@@ -65,6 +67,7 @@ export const Navbar: React.FC = () => {
           </NavLinks>
           <NavLinks
             activeClass="active"
+            offset={-60}
             to="service"
             spy={true}
             smooth={true}
@@ -75,6 +78,7 @@ export const Navbar: React.FC = () => {
           </NavLinks>
           <NavLinks
             activeClass="active"
+            offset={-60}
             to="product"
             spy={true}
             smooth={true}
@@ -85,6 +89,7 @@ export const Navbar: React.FC = () => {
           </NavLinks>
           <NavLinks
             activeClass="active"
+            offset={-60}
             to="casestudy"
             spy={true}
             smooth={true}
@@ -95,6 +100,7 @@ export const Navbar: React.FC = () => {
           </NavLinks>
           <NavLinks
             activeClass="active"
+            offset={-60}
             to="technology"
             spy={true}
             smooth={true}
@@ -105,6 +111,7 @@ export const Navbar: React.FC = () => {
           </NavLinks>
           <NavLinks
             activeClass="active"
+            offset={-60}
             to="contactus"
             spy={true}
             smooth={true}

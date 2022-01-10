@@ -19,6 +19,7 @@ export const Footer: React.FC = () => {
             <div tw="flex space-x-5 justify-center flex-wrap lg:justify-evenly w-full text-gray-400">
               <Link
                 activeClass="active"
+                offset={-60}
                 to="home"
                 spy={true}
                 smooth={true}
@@ -28,6 +29,7 @@ export const Footer: React.FC = () => {
               </Link>
               <Link
                 activeClass="active"
+                offset={-60}
                 to="about"
                 spy={true}
                 smooth={true}
@@ -37,6 +39,7 @@ export const Footer: React.FC = () => {
               </Link>
               <Link
                 activeClass="active"
+                offset={-60}
                 to="service"
                 spy={true}
                 smooth={true}
@@ -46,6 +49,7 @@ export const Footer: React.FC = () => {
               </Link>
               <Link
                 activeClass="active"
+                offset={-60}
                 to="product"
                 spy={true}
                 smooth={true}
@@ -53,11 +57,19 @@ export const Footer: React.FC = () => {
                 className="cursor-pointer hover:text-black">
                 Product
               </Link>
-              <Link activeClass="active" to="casestudy" spy={true} smooth={true} duration={300} className="hidden">
+              <Link
+                activeClass="active"
+                offset={-60}
+                to="casestudy"
+                spy={true}
+                smooth={true}
+                duration={300}
+                className="hidden">
                 Case Study
               </Link>
               <Link
                 activeClass="active"
+                offset={-60}
                 to="technology"
                 spy={true}
                 smooth={true}
@@ -67,6 +79,7 @@ export const Footer: React.FC = () => {
               </Link>
               <Link
                 activeClass="active"
+                offset={-60}
                 to="contactus"
                 spy={true}
                 smooth={true}
