@@ -1,6 +1,6 @@
-import tw, { styled } from 'twin.macro'
-
 import { Container } from '@/components/Layouts'
+import tw, { styled } from 'twin.macro'
+import { Link } from 'react-scroll'
 
 const Background = styled.div`
   ${tw`w-full`}
@@ -8,23 +8,72 @@ const Background = styled.div`
 `
 
 const Content = styled.div`
-  ${tw`flex flex-col items-center justify-between w-full pt-[6.25rem] pb-12 px-72 text-center`}
+  ${tw`flex flex-col items-center justify-between w-full py-8 md:pt-[6.25rem] md:pb-12 md:px-24 lg:px-72 text-center`}
 `
-
 export const Footer: React.FC = () => {
   return (
     <>
       <Background>
         <Container>
           <Content>
-            <div tw="flex justify-evenly w-full text-gray-500">
-              <a href="#">Home</a>
-              <a href="#">Service</a>
-              <a href="#">Product</a>
-              <a href="#">Case Study</a>
-              <a href="#">Technology</a>
-              <a href="#">About</a>
-              <a href="#">Contact Us</a>
+            <div tw="flex space-x-5 justify-center flex-wrap lg:justify-evenly w-full text-gray-400">
+              <Link
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+                duration={300}
+                className="cursor-pointer hover:text-black">
+                Home
+              </Link>
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={300}
+                className="cursor-pointer hover:text-black">
+                About
+              </Link>
+              <Link
+                activeClass="active"
+                to="service"
+                spy={true}
+                smooth={true}
+                duration={300}
+                className="cursor-pointer hover:text-black">
+                Service
+              </Link>
+              <Link
+                activeClass="active"
+                to="product"
+                spy={true}
+                smooth={true}
+                duration={300}
+                className="cursor-pointer hover:text-black">
+                Product
+              </Link>
+              <Link activeClass="active" to="casestudy" spy={true} smooth={true} duration={300} className="hidden">
+                Case Study
+              </Link>
+              <Link
+                activeClass="active"
+                to="technology"
+                spy={true}
+                smooth={true}
+                duration={300}
+                className="cursor-pointer hover:text-black">
+                Technology
+              </Link>
+              <Link
+                activeClass="active"
+                to="contactus"
+                spy={true}
+                smooth={true}
+                duration={300}
+                className="cursor-pointer hover:text-black">
+                Contact Us
+              </Link>
             </div>
             <div tw="flex justify-evenly w-3/12 text-gray-500 my-8">
               <a href="#">
@@ -37,7 +86,7 @@ export const Footer: React.FC = () => {
                 <img src={'/assets/icons/linked.png'} />
               </a>
             </div>
-            <p tw="text-gray-400">© 2022 PT Sawala Inovasi Indonesia. All rights reserved.</p>
+            <p tw="text-gray-400 px-5">© 2022 PT Sawala Inovasi Indonesia. All rights reserved.</p>
           </Content>
         </Container>
       </Background>

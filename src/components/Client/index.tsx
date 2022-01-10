@@ -1,76 +1,51 @@
-import tw, { styled } from 'twin.macro'
-
+import ClienCard from '@/components/Card/Client'
 import { Container } from '@/components/Layouts'
+import Button from '@components/Buttons'
+import dataClient from '@jsons/client.json'
+import tw, { styled } from 'twin.macro'
+import { Element } from 'react-scroll'
 
 const Content = styled.div`
-  ${tw`flex flex-col items-center justify-between w-full pt-16 pb-[5.625rem]  text-center`}
+  ${tw`flex flex-col items-center justify-between w-full pt-16 pb-16 lg:pb-[5.625rem]  text-center`}
 `
 
 const ContentHead = styled.h1`
-  ${tw`text-4xl font-bold mb-7`}
+  ${tw`text-3xl lg:text-4xl font-bold mb-7`}
 `
 const Contentsub = styled.div`
-  ${tw`text-gray-500 px-80`}
+  ${tw`text-gray-500 md:px-44 lg:px-72`}
 `
 const ContentGalery = styled.div`
-  ${tw`w-10/12 mt-[3.75rem] grid grid-cols-4 grid-rows-3 gap-4`}
+  ${tw`lg:w-10/12 sm:px-5 mt-[3.75rem] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 lg:grid-rows-3 gap-4`}
 `
 const ContentGaleryItems = styled.div`
-  ${tw`h-[7.875rem] w-full border rounded shadow`}
+  ${tw`h-[5.5rem] lg:h-[7.875rem] w-full border rounded shadow flex justify-center items-center p-5 cursor-pointer hover:bg-blue-300`}
 `
 
 export const Client: React.FC = () => {
   return (
     <>
-      <Container>
-        <Content>
-          <ContentHead>
-            Featured Clients<span tw="text-secondary">_</span>
-          </ContentHead>
-          <Contentsub>
-            Kami telah dipercaya perusahaan nasional dan internasional untuk mengembangkan, mengelola dan memelihara
-            software/sistem informasi mereka.
-          </Contentsub>
-          <ContentGalery>
-            <ContentGaleryItems>
-              <img src={'/assets/images/client-1.png'} />
-            </ContentGaleryItems>
-            <ContentGaleryItems>
-              <img src={'/assets/images/client-2.png'} />
-            </ContentGaleryItems>
-            <ContentGaleryItems>
-              <img src={'/assets/images/client-3.png'} />
-            </ContentGaleryItems>
-            <ContentGaleryItems>
-              <img src={'/assets/images/client-4.png'} />
-            </ContentGaleryItems>
-            <ContentGaleryItems>
-              <img src={'/assets/images/client-5.png'} />
-            </ContentGaleryItems>
-            <ContentGaleryItems>
-              <img src={'/assets/images/client-6.png'} />
-            </ContentGaleryItems>
-            <ContentGaleryItems>
-              <img src={'/assets/images/client-7.png'} />
-            </ContentGaleryItems>
-            <ContentGaleryItems>
-              <img src={'/assets/images/client-8.png'} />
-            </ContentGaleryItems>
-            <ContentGaleryItems>
-              <img src={'/assets/images/client-9.png'} />
-            </ContentGaleryItems>
-            <ContentGaleryItems>
-              <img src={'/assets/images/client-10.png'} />
-            </ContentGaleryItems>
-            <ContentGaleryItems>
-              <img src={'/assets/images/client-11.png'} />
-            </ContentGaleryItems>
-            <ContentGaleryItems>
-              <img src={'/assets/images/client-12.png'} />
-            </ContentGaleryItems>
-          </ContentGalery>
-        </Content>
-      </Container>
+      <Element name="client" className="element">
+        <Container>
+          <Content>
+            <ContentHead>
+              Featured Clients<span tw="text-secondary">_</span>
+            </ContentHead>
+            <Contentsub>
+              Kami telah dipercaya perusahaan nasional dan internasional untuk mengembangkan, mengelola dan memelihara
+              software/sistem informasi mereka.
+            </Contentsub>
+            <ContentGalery>
+              {dataClient.map((dataClient: { slug: string; thumb: string }, i: number) => (
+                <ContentGaleryItems>
+                  <ClienCard key={i} slug={dataClient.slug} image={dataClient.thumb}></ClienCard>
+                </ContentGaleryItems>
+              ))}
+            </ContentGalery>
+            <Button text="More Client" tw="rounded-full px-12 mt-10"></Button>
+          </Content>
+        </Container>
+      </Element>
     </>
   )
 }

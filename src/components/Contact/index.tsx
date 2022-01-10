@@ -1,30 +1,36 @@
-import tw, { styled } from 'twin.macro'
-
-import { Container } from '@/components/Layouts'
 import Button from '@/components/Buttons'
+import { Container } from '@/components/Layouts'
+import tw, { styled } from 'twin.macro'
+import { Element } from 'react-scroll'
 
 const Background = styled.div`
-  ${tw`w-full bg-primary`}
+  ${tw`w-full border-b-8`}
+  background-image:url(/assets/images/cta.png);
+  background-size: cover;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, #0161e7 -3.51%, #fc0c47 46%, #f68f11 75.16%, #fb0246 102.12%);
 `
 const Content = styled.div`
   ${tw`flex flex-col items-center justify-between w-full py-[5.125rem]  text-center`}
 `
 
 const ContentHead = styled.h1`
-  ${tw`text-4xl font-bold text-white mb-7`}
+  ${tw`text-3xl md:text-4xl font-bold text-white mb-7`}
 `
 
 export const Contact: React.FC = () => {
   return (
     <>
-      <Background>
-        <Container>
-          <Content>
-            <ContentHead>Let's work together, it will be mutually beneficial</ContentHead>
-            <Button text="Contact Us" variant="secondary" tw="font-semibold mt-6 rounded-full px-6" />
-          </Content>
-        </Container>
-      </Background>
+      <Element name="contactus" className="element">
+        <Background>
+          <Container>
+            <Content>
+              <ContentHead>Let's work together, it will be mutually beneficial</ContentHead>
+              <Button text="Contact Us" variant="secondary" tw="font-semibold mt-6 rounded-full px-6" />
+            </Content>
+          </Container>
+        </Background>
+      </Element>
     </>
   )
 }
