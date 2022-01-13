@@ -9,7 +9,19 @@ module.exports = {
   theme: {
     colors: {
       // You may customize your own custom color here
+      primary: '#236AF2',
+      secondary: '#FB0046',
       ...colors
+    },
+    fontFamily: {
+      display: ['Inter', 'sans-serif'],
+      body: ['Inter', 'sans-serif']
+    },
+    extend: {
+      backgroundImage: {
+        'hero-background': "url('/assets/images/hero-background.png')",
+        'formulir-background': "url('/assets/images/formulir-background.png')"
+      }
     }
   },
   plugins: [require('tailwind-filter-utilities')]
