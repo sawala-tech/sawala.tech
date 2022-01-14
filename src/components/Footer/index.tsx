@@ -1,6 +1,7 @@
 import { Container } from '@/components/Layouts'
 import tw, { styled } from 'twin.macro'
-import { Link } from 'react-scroll'
+import { Link as ReactLink } from 'react-scroll'
+import Link from 'next/link'
 
 const Background = styled.div`
   ${tw`w-full`}
@@ -17,7 +18,7 @@ export const Footer: React.FC = () => {
         <Container>
           <Content>
             <div tw="flex space-x-5 justify-center flex-wrap lg:justify-evenly w-full text-gray-400">
-              <Link
+              <ReactLink
                 activeClass="active"
                 offset={-60}
                 to="home"
@@ -26,8 +27,8 @@ export const Footer: React.FC = () => {
                 duration={300}
                 className="cursor-pointer hover:text-black">
                 Home
-              </Link>
-              <Link
+              </ReactLink>
+              <ReactLink
                 activeClass="active"
                 offset={-60}
                 to="about"
@@ -36,8 +37,8 @@ export const Footer: React.FC = () => {
                 duration={300}
                 className="cursor-pointer hover:text-black">
                 About
-              </Link>
-              <Link
+              </ReactLink>
+              <ReactLink
                 activeClass="active"
                 offset={-60}
                 to="service"
@@ -46,8 +47,8 @@ export const Footer: React.FC = () => {
                 duration={300}
                 className="cursor-pointer hover:text-black">
                 Service
-              </Link>
-              <Link
+              </ReactLink>
+              <ReactLink
                 activeClass="active"
                 offset={-60}
                 to="product"
@@ -56,8 +57,8 @@ export const Footer: React.FC = () => {
                 duration={300}
                 className="cursor-pointer hover:text-black">
                 Product
-              </Link>
-              <Link
+              </ReactLink>
+              <ReactLink
                 activeClass="active"
                 offset={-60}
                 to="casestudy"
@@ -66,8 +67,8 @@ export const Footer: React.FC = () => {
                 duration={300}
                 className="hidden">
                 Case Study
-              </Link>
-              <Link
+              </ReactLink>
+              <ReactLink
                 activeClass="active"
                 offset={-60}
                 to="technology"
@@ -76,8 +77,8 @@ export const Footer: React.FC = () => {
                 duration={300}
                 className="cursor-pointer hover:text-black">
                 Technology
-              </Link>
-              <Link
+              </ReactLink>
+              <ReactLink
                 activeClass="active"
                 offset={-60}
                 to="contactus"
@@ -86,18 +87,24 @@ export const Footer: React.FC = () => {
                 duration={300}
                 className="cursor-pointer hover:text-black">
                 Contact Us
-              </Link>
+              </ReactLink>
             </div>
             <div tw="flex justify-evenly w-3/12 text-gray-500 my-8">
-              <a href="#">
-                <img src={'/assets/icons/facebook.png'} />
-              </a>
-              <a href="#">
-                <img src={'/assets/icons/instagram.png'} />
-              </a>
-              <a href="#">
-                <img src={'/assets/icons/linked.png'} />
-              </a>
+              <Link href="https://www.facebook.com/sawala.tech/">
+                <a target="_blank">
+                  <img src={'/assets/icons/facebook.png'} tw="hover:cursor-pointer" />
+                </a>
+              </Link>
+              <Link href="https://www.instagram.com/sawala.tech/">
+                <a target="_blank">
+                  <img src={'/assets/icons/instagram.png'} tw="hover:cursor-pointer" />
+                </a>
+              </Link>
+              <Link href="https://www.linkedin.com/company/sawala/">
+                <a target="_blank">
+                  <img src={'/assets/icons/linked.png'} tw="hover:cursor-pointer" />
+                </a>
+              </Link>
             </div>
             <p tw="text-gray-400 px-5">© 2022 PT Sawala Inovasi Indonesia. All rights reserved.</p>
           </Content>
