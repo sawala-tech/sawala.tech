@@ -43,7 +43,9 @@ export const Founder: React.FC = () => {
                 <div tw="flex items-center mt-2">
                   <img src={'/assets/icons/linkedin.png'} />
                   <Link href="http://linkedin.com/in/ahmadnr">
-                    <p tw="ml-3">linkedin.com/in/ahmadnr</p>
+                    <a target="_blank">
+                      <p tw="ml-3 hover:cursor-pointer">linkedin.com/in/ahmadnr</p>
+                    </a>
                   </Link>
                 </div>
               </div>
@@ -64,7 +66,9 @@ export const Founder: React.FC = () => {
                 <div tw="flex items-center mt-2">
                   <img src={'/assets/icons/linkedin.png'} />
                   <Link href="http://linkedin.com/in/sutisna">
-                    <p tw="ml-3">linkedin.com/in/sutisna</p>
+                    <a target="_blank">
+                      <p tw="ml-3 hover:cursor-pointer">linkedin.com/in/sutisna</p>
+                    </a>
                   </Link>
                 </div>
               </div>
