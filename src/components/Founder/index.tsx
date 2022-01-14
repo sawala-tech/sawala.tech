@@ -1,4 +1,5 @@
 import { Container } from '@/components/Layouts'
+import Link from 'next/link'
 import tw, { styled } from 'twin.macro'
 
 const Content = styled.div`
@@ -41,7 +42,9 @@ export const Founder: React.FC = () => {
                 </p>
                 <div tw="flex items-center mt-2">
                   <img src={'/assets/icons/linkedin.png'} />
-                  <p tw="ml-3">linkedin.com/in/ahmadnr</p>
+                  <Link href="http://linkedin.com/in/ahmadnr">
+                    <p tw="ml-3">linkedin.com/in/ahmadnr</p>
+                  </Link>
                 </div>
               </div>
             </ContentGaleryItems>
@@ -60,7 +63,9 @@ export const Founder: React.FC = () => {
                 </p>
                 <div tw="flex items-center mt-2">
                   <img src={'/assets/icons/linkedin.png'} />
-                  <p tw="ml-3">linkedin.com/in/sutisna</p>
+                  <Link href="http://linkedin.com/in/sutisna">
+                    <p tw="ml-3">linkedin.com/in/sutisna</p>
+                  </Link>
                 </div>
               </div>
             </ContentGaleryItems>
