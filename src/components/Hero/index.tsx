@@ -49,7 +49,7 @@ export const Hero: React.FC = () => {
 
       <Element name="home" className="element">
         <Background>
-          <Container tag={'div'} tw="px-0 py-[2rem] sm:py-0">
+          <Container tag={'div'} tw="px-0 py-10 sm:py-0">
             <Content>
               <ContentText>
                 <ContentTextHead>Accelerate good things with technology</ContentTextHead>
