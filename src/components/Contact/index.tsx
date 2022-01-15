@@ -15,7 +15,7 @@ const Content = styled.div`
 `
 
 const ContentHead = styled.h1`
-  ${tw`text-3xl md:text-4xl font-bold text-white mb-7`}
+  ${tw`text-2xl md:text-4xl font-bold text-white mb-7`}
 `
 
 export const Contact: React.FC = () => {
