@@ -6,17 +6,17 @@ import tw, { styled } from 'twin.macro'
 import { Link, Element } from 'react-scroll'
 
 const Background = styled.div`
-  ${tw`flex items-center w-full h-[78vh] lg:h-screen bg-cover bg-hero-background bg-[#EFF6FF]`}
+  ${tw`flex items-center w-full lg:h-screen bg-cover bg-hero-background bg-[#EFF6FF] bg-opacity-80 backdrop-blur-lg`}
 `
 
 const Content = styled.div`
   ${tw`flex space-y-10 flex-col-reverse items-center justify-between w-full lg:flex-row`}
 `
 const ContentText = styled.div`
-  ${tw`px-5 md:w-5/6 lg:w-3/5 md:px-5 lg:px-0`}
+  ${tw`px-5 md:w-5/6 lg:w-[59%] md:px-5 lg:px-0`}
 `
 const ContentTextHead = styled.p`
-  ${tw`h-auto pt-7 pb-5 lg:pb-8 lg:mb-2 font-bold text-2xl md:text-3xl lg:text-7xl`}
+  ${tw`h-auto pt-7 pb-5 lg:pb-8 lg:mb-2 font-bold text-2xl md:text-3xl lg:text-5xl`}
   background: linear-gradient(90deg,#0161E7 -3.51%, #FC0C47 46%, #F68F11 75.16%, #FB0246 102.12%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -49,7 +49,7 @@ export const Hero: React.FC = () => {
 
       <Element name="home" className="element">
         <Background>
-          <Container tag={'div'} tw="px-0">
+          <Container tag={'div'} tw="px-0 py-[2rem] sm:py-0">
             <Content>
               <ContentText>
                 <ContentTextHead>Accelerate good things with technology</ContentTextHead>

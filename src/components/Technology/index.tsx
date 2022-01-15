@@ -32,7 +32,7 @@ const ContentLeftBot = styled.div`
   ${tw`py-10 lg:py-0 lg:mt-[2.875rem] justify-items-center hidden sm:grid sm:grid-cols-2 sm:gap-2 lg:grid-rows-3`}
 `
 const ContentRight = styled.div`
-  ${tw`space-y-5 py-5 sm:space-y-0 flex-col sm:grid sm:grid-cols-2 sm:gap-4 lg:flex lg:flex-row lg:w-2/3 justify-evenly`}
+  ${tw`space-y-5 py-5 sm:space-y-0 flex-col sm:grid sm:grid-cols-2 sm:gap-4 lg:flex lg:flex-row lg:w-2/3 justify-evenly lg:justify-end lg:gap-12`}
 `
 const ContentRightHead = styled.h1`
   ${tw`mb-6 text-2xl font-bold`}
@@ -86,7 +86,7 @@ export const Technology: React.FC = () => {
     <>
       <Element name="technology" className="element">
         <Background>
-          <Container tag={'div'} tw="px-0 sm:p-5 md:p-10">
+          <Container tag={'div'} tw="px-0 sm:p-5 md:p-14">
             <Content>
               <ContentLeft>
                 <ContentLeftTop>
