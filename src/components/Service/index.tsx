@@ -117,7 +117,7 @@ export const Service: React.FC = () => {
                   variant="primary"
                   tw="mt-6 rounded-full px-8"
                   external={true}
-                  url="https://wa.link/mxjlln"
+                  url="https://wa.link/4l62ek"
                 />
               </ContentLeft>
               <ContentRight>
