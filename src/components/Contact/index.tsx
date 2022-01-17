@@ -31,7 +31,7 @@ export const Contact: React.FC = () => {
                 variant="secondary"
                 tw="font-semibold mt-6 rounded-full px-6"
                 external={true}
-                url="https://wa.link/mxjlln"
+                url="https://wa.link/4l62ek"
               />
             </Content>
           </Container>
