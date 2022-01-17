@@ -182,7 +182,7 @@ export const Technology: React.FC = () => {
                     <img src={'/assets/images/tech-left-6.png'} />
                   </div>
                 </ContentBottomtBot>
-                <Button text="See More" variant="primary" tw="sm:hidden block mt-6 rounded-full px-12" />
+                <Button text="See More" variant="primary" tw="hidden mt-6 rounded-full px-12" />
               </ContentBottomSub>
             </Content>
           </Container>
