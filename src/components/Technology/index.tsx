@@ -94,8 +94,8 @@ export const Technology: React.FC = () => {
                     Technology<span tw="text-secondary">_</span>
                   </ContentLeftTopHead>
                   <ContentLeftTopSub>
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                    fugiat.
+                    Berikut adalah teknologi dan framework yang kami gunakan dalam mengembangkan sistem informasi berbasis
+                    website.
                     <Button text="See More" variant="primary" tw="hidden mt-6 rounded-full px-12" />
                   </ContentLeftTopSub>
                 </ContentLeftTop>
