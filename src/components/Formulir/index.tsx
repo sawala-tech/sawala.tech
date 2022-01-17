@@ -1,7 +1,7 @@
 import Button from '@/components/Buttons'
 import { Container } from '@/components/Layouts'
-import tw, { styled } from 'twin.macro'
 import { Element } from 'react-scroll'
+import tw, { styled } from 'twin.macro'
 
 const Background = styled.div`
   ${tw`bg-right-bottom bg-no-repeat bg-primary bg-formulir-background`}
@@ -19,7 +19,7 @@ const ContentHead = styled.h1`
 `
 
 const ContentSub = styled.p`
-  ${tw`lg:w-10/12 mb-8`}
+  ${tw`lg:w-10/12 mb-4 md:mb-8`}
 `
 
 export const Formulir: React.FC = () => {
@@ -34,11 +34,16 @@ export const Formulir: React.FC = () => {
               <ContentSub>
                 Buat formulir pendaftaran, terima pembayaran dan otomatisasi banyak hal. <br /> <br />
                 Formulir.id adalah Software as a Service (SaaS) berbasis cloud untuk membuat formulir online. Cocok digunakan
-                untuk pendaftaran, penjualan kelas online dan produk lainnya. <br />
-                Dilengkapi berbagai fitur otomatisasi seperti invoice, integrasi dengan payment gateway dan aplikasi webinar
-                dll.
+                untuk pendaftaran, penjualan kelas online dan produk lainnya. Dilengkapi berbagai fitur otomatisasi seperti
+                invoice, integrasi dengan payment gateway dan aplikasi webinar dll.
               </ContentSub>
-              <Button text="Try For Free" variant="secondary" tw="mt-6 rounded-full px-8" />
+              <Button
+                text="Contact Us"
+                variant="secondary"
+                tw="mt-6 rounded-full px-8"
+                external={true}
+                url="https://wa.link/mxjlln"
+              />
             </Content>
           </Container>
         </Background>

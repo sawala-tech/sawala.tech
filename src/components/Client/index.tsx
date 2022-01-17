@@ -35,13 +35,13 @@ export const Client: React.FC = () => {
               software/sistem informasi mereka.
             </Contentsub>
             <ContentGalery>
-              {dataClient.map((dataClient: { slug: string; thumb: string }, i: number) => (
+              {dataClient.map((dataClient: { thumb: string }, i: number) => (
                 <ContentGaleryItems key={i}>
-                  <ClienCard slug={dataClient.slug} image={dataClient.thumb}></ClienCard>
+                  <ClienCard image={dataClient.thumb}></ClienCard>
                 </ContentGaleryItems>
               ))}
             </ContentGalery>
-            <Button text="More Client" tw="rounded-full px-12 mt-10"></Button>
+            <Button text="More Client" tw="hidden rounded-full px-12 mt-10"></Button>
           </Content>
         </Container>
       </Element>

@@ -96,7 +96,7 @@ export const Technology: React.FC = () => {
                   <ContentLeftTopSub>
                     Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
                     fugiat.
-                    <Button text="See More" variant="primary" tw="hidden sm:block mt-6 rounded-full px-12" />
+                    <Button text="See More" variant="primary" tw="hidden mt-6 rounded-full px-12" />
                   </ContentLeftTopSub>
                 </ContentLeftTop>
                 <ContentLeftBot>

@@ -75,7 +75,7 @@ export const DefaultModal: React.FunctionComponent<DefaultModal & React.HTMLAttr
                           setIsOpen(false)
                           onClose && onClose()
                         }}>
-                        <X size={45} color="#ffffff" />
+                        <X size={40} color="#ffffff" />
                       </button>
                     )}
                   </div>

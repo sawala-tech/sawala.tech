@@ -106,7 +106,7 @@ export const Footer: React.FC = () => {
                 </a>
               </Link>
             </div>
-            <p tw="text-gray-400 px-5">© 2022 PT Sawala Inovasi Indonesia. All rights reserved.</p>
+            <p tw="text-gray-400 px-5">© {new Date().getFullYear()} PT Sawala Inovasi Indonesia. All rights reserved.</p>
           </Content>
         </Container>
       </Background>

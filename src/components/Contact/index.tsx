@@ -25,8 +25,14 @@ export const Contact: React.FC = () => {
         <Background>
           <Container>
             <Content>
-              <ContentHead>Let's work together, it will be mutually beneficial</ContentHead>
-              <Button text="Contact Us" variant="secondary" tw="font-semibold mt-6 rounded-full px-6" />
+              <ContentHead>Let's accelerate good things, together.</ContentHead>
+              <Button
+                text="Contact Us"
+                variant="secondary"
+                tw="font-semibold mt-6 rounded-full px-6"
+                external={true}
+                url="https://wa.link/mxjlln"
+              />
             </Content>
           </Container>
         </Background>

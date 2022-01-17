@@ -24,10 +24,9 @@ export const About: React.FC = () => {
               About<span tw="text-secondary">_</span>
             </ContentHead>
             <Contentsub>
-              PT Sawala Innovation Indonesia (SAWALA Technology) is a software development company. With the main expertise
-              in developing web and cloud technology-based information systems. Apart from working on software/information
-              systems according to client needs, SAWALA is also an official sales partner of Google Workspace/Suite,
-              DigitalOcean, LivePerson and Amazon Web Services (AWS) in Indonesia.
+              Dirintis sejak tahun 2015 dan berdiri menjadi bisnis berbadan hukum pada tahun 2018. Selain mengerjakan
+              software/sistem informasi sesuai kebutuhan klien, SAWALA juga merupakan mitra penjualan resmi Google
+              Workspace/Suite, DigitalOcean, LivePerson dan Amazon Web Services (AWS) di Indonesia.
             </Contentsub>
           </Content>
         </Container>
