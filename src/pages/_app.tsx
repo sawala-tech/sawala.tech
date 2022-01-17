@@ -38,7 +38,7 @@ const _APP = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        <title>Teknologi SAWALA — Percepat hal-hal barang dengan teknologi</title>
+        <title>SAWALA Technology — Accelerate goods things with technology</title>
         <link rel="icon" type="image/ico" href="/static/icons/logo.png"></link>
         <meta name="robots" content="index, follow" />
       </Head>

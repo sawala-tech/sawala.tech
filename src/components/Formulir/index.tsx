@@ -5,13 +5,13 @@ import { Element } from 'react-scroll'
 
 const Background = styled.div`
   ${tw`bg-right-bottom bg-no-repeat bg-primary bg-formulir-background`}
-  background-size: 40%;
+  background-size: auto;
   @media (max-width: 1024px) {
     background-size: 350px;
   }
 `
 const Content = styled.div`
-  ${tw`flex flex-col items-start justify-between lg:w-1/2 pb-72 md:py-[4.5rem] text-white`}
+  ${tw`flex flex-col items-start justify-between lg:w-[55%] pb-72 md:py-[4.5rem] text-white`}
 `
 
 const ContentHead = styled.h1`
