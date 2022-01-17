@@ -54,8 +54,8 @@ export const Hero: React.FC = () => {
               <ContentText>
                 <ContentTextHead>Accelerate good things with technology</ContentTextHead>
                 <ContentTextSub>
-                  From social entrepreneurs to international organizations - they have been trusted us to provide technology
-                  services for their impact-driven efforts.
+                  PT Sawala Inovasi Indonesia (SAWALA Technology) adalah perusahaan pengembang software. Dengan keahlian
+                  utama mengembangkan sistem informasi berbasis teknologi web dan cloud.
                 </ContentTextSub>
                 <Link to="about" spy={true} smooth={true} offset={-50} duration={300}>
                   <Button text="Learn More" variant="primary" tw="mt-6 rounded-full px-8" />

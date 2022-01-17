@@ -14,7 +14,7 @@ const ContentLeft = styled.div`
   ${tw`lg:w-1/2`}
 `
 const ContentLeftService = styled.div`
-  ${tw`lg:w-7/12`}
+  ${tw`lg:w-2/3`}
 `
 
 const ContentRight = styled.div`
@@ -112,7 +112,13 @@ export const Service: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <Button text="More Services" variant="primary" tw="mt-6 rounded-full px-8" />
+                <Button
+                  text="Contact Us"
+                  variant="primary"
+                  tw="mt-6 rounded-full px-8"
+                  external={true}
+                  url="https://wa.link/mxjlln"
+                />
               </ContentLeft>
               <ContentRight>
                 <div>

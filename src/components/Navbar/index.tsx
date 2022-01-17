@@ -25,8 +25,8 @@ export const Navbar: React.FC = () => {
           scrolled ? 'bg-white py-3 lg:py-5 shadow-md transition-all duration-500' : ' py-5 lg:py-10'
         }`}>
         <Container tag="nav" tw="flex items-center justify-between">
-          <img src={'/assets/images/logo.svg'} width={150} />
-          <img src={'/assets/icons/navbar.png'} onClick={() => setOpen(true)} className="cursor-pointer" />
+          <img src={'/assets/images/logo-sawala-tech.svg'} width={150} />
+          <img src={'/assets/icons/navbar.svg'} onClick={() => setOpen(true)} className="cursor-pointer" />
         </Container>
       </header>
       <DefaultModal open={open} closeButton={true} onClose={() => setOpen(false)}></DefaultModal>
