@@ -1,26 +1,32 @@
 [
   {
     "to": "home",
-    "title": "Home"
+    "title": "Home",
+    "offset": -55
   },
   {
     "to": "about",
-    "title": "About"
+    "title": "About",
+    "offset": -55
   },
   {
     "to": "service",
-    "title": "Service"
+    "title": "Service",
+    "offset": -55
   },
   {
     "to": "product",
-    "title": "Product"
+    "title": "Product",
+    "offset": -50
   },
   {
     "to": "technology",
-    "title": "Technology"
+    "title": "Technology",
+    "offset": -45
   },
   {
     "to": "contactus",
-    "title": "Contact Us"
+    "title": "Contact Us",
+    "offset": -58
   }
 ]

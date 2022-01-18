@@ -1,14 +1,14 @@
 import Button from '@/components/Buttons'
 import { Container } from '@/components/Layouts'
 import { Navbar } from '@/components/Navbar'
+import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import { Element, Link } from 'react-scroll'
 import tw, { styled } from 'twin.macro'
-import { Link, Element } from 'react-scroll'
 
 const Background = styled.div`
   ${tw`flex items-center w-full lg:h-screen bg-cover bg-hero-background bg-[#EFF6FF] bg-opacity-80 backdrop-blur-lg`}
 `
-
 const Content = styled.div`
   ${tw`flex space-y-10 flex-col-reverse items-center justify-between w-full lg:flex-row`}
 `
@@ -25,7 +25,7 @@ const ContentTextSub = styled.p`
   ${tw`lg:pr-16 lg:text-xl text-gray-500 `}
 `
 const ContentImage = styled.div`
-  ${tw`items-center lg:w-2/5 lg:pr-2 w-full flex justify-center`}
+  ${tw`relative items-center lg:w-2/5 lg:pr-2 w-full flex justify-center h-[15rem]`}
 `
 
 export const Hero: React.FC = () => {
@@ -46,7 +46,6 @@ export const Hero: React.FC = () => {
   return (
     <>
       <Navbar />
-
       <Element name="home" className="element">
         <Background>
           <Container tag={'div'} tw="px-0 py-10 sm:py-0">
@@ -62,9 +61,12 @@ export const Hero: React.FC = () => {
                 </Link>
               </ContentText>
               <ContentImage>
-                <img
+                <Image
                   src={isDesktop ? '/assets/images/hero-image.png' : '/assets/images/image-4.png'}
                   className={isDesktop ? 'rounded-full' : ''}
+                  width={isDesktop ? 390 : 0}
+                  height={isDesktop ? 390 : 0}
+                  layout={isDesktop ? 'fixed' : 'fill'}
                 />
               </ContentImage>
             </Content>

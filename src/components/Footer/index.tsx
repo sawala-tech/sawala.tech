@@ -2,6 +2,7 @@ import { Container } from '@/components/Layouts'
 import tw, { styled } from 'twin.macro'
 import { Link as ReactLink } from 'react-scroll'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Background = styled.div`
   ${tw`w-full`}
@@ -89,20 +90,20 @@ export const Footer: React.FC = () => {
                 Contact Us
               </ReactLink>
             </div>
-            <div tw="flex justify-evenly w-3/12 text-gray-500 my-8">
+            <div tw="flex space-x-3 md:space-x-0 justify-evenly w-3/12 text-gray-500 my-8">
               <Link href="https://www.facebook.com/sawala.tech/">
                 <a target="_blank">
-                  <img src={'/assets/icons/facebook.png'} tw="hover:cursor-pointer" />
+                  <Image src={'/assets/icons/facebook.png'} height={20} width={20} layout="fixed" />
                 </a>
               </Link>
               <Link href="https://www.instagram.com/sawala.tech/">
                 <a target="_blank">
-                  <img src={'/assets/icons/instagram.png'} tw="hover:cursor-pointer" />
+                  <Image src={'/assets/icons/instagram.png'} height={20} width={20} layout="fixed" />
                 </a>
               </Link>
               <Link href="https://www.linkedin.com/company/sawala/">
                 <a target="_blank">
-                  <img src={'/assets/icons/linked.png'} tw="hover:cursor-pointer" />
+                  <Image src={'/assets/icons/linked.png'} height={20} width={20} layout="fixed" />
                 </a>
               </Link>
             </div>

@@ -2,6 +2,7 @@ import Button from '@/components/Buttons'
 import { Container } from '@/components/Layouts'
 import { Element } from 'react-scroll'
 import tw, { styled } from 'twin.macro'
+import Image from 'next/image'
 
 const Background = styled.div`
   ${tw`bg-right-bottom bg-no-repeat bg-primary bg-formulir-background`}
@@ -11,7 +12,7 @@ const Background = styled.div`
   }
 `
 const Content = styled.div`
-  ${tw`flex flex-col items-start justify-between lg:w-[55%] pb-72 md:py-[4.5rem] text-white`}
+  ${tw`flex flex-col items-start justify-between lg:w-[55%] pt-10 pb-72 lg:pt-0 md:py-[4.5rem] text-white`}
 `
 
 const ContentHead = styled.h1`
@@ -29,7 +30,7 @@ export const Formulir: React.FC = () => {
         <Background>
           <Container tag={'div'} tw="p-5 md:p-14">
             <Content>
-              <img src={'/assets/images/formulir.png'} />
+              <Image src={'/assets/images/formulir.png'} width={130} height={30} layout="fixed" />
               <ContentHead>Formulir online serba bisa.</ContentHead>
               <ContentSub>
                 Buat formulir pendaftaran, terima pembayaran dan otomatisasi banyak hal. <br /> <br />

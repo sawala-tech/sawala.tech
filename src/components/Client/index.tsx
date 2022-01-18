@@ -18,7 +18,7 @@ const ContentGalery = styled.div`
   ${tw`lg:w-10/12 sm:px-5 mt-[3.75rem] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 lg:grid-rows-3 gap-4`}
 `
 const ContentGaleryItems = styled.div`
-  ${tw`h-[5.5rem] lg:h-[7.875rem] w-full border rounded shadow flex justify-center items-center p-5 cursor-pointer hover:bg-blue-300`}
+  ${tw`h-[5rem] lg:h-[7rem] w-full border rounded shadow flex justify-center items-center p-5 cursor-pointer hover:bg-blue-300`}
 `
 
 export const Client: React.FC = () => {

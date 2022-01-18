@@ -82,7 +82,7 @@ export const DefaultModal: React.FunctionComponent<DefaultModal & React.HTMLAttr
                 </header>
                 <div tw="flex flex-col space-y-8 text-white text-3xl transform z-30">
                   <div tw="flex flex-col space-y-8 text-white text-3xl justify-center items-center h-screen z-50">
-                    {dataLinks.map((dataLinks: { to: string; title: string }, i: number) => (
+                    {dataLinks.map((dataLinks: { to: string; title: string; offset: number }, i: number) => (
                       <Links
                         key={i}
                         to={dataLinks.to}
@@ -90,7 +90,8 @@ export const DefaultModal: React.FunctionComponent<DefaultModal & React.HTMLAttr
                         onClick={() => {
                           setIsOpen(false)
                           onClose && onClose()
-                        }}></Links>
+                        }}
+                        offset={dataLinks.offset}></Links>
                     ))}
                   </div>
                 </div>
