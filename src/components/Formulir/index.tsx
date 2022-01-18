@@ -28,7 +28,7 @@ export const Formulir: React.FC = () => {
         <Background>
           <Container tag={'div'} tw="p-5 md:p-14">
             <Content>
-              <Image src={'/assets/images/logo_formulir.svg'} width={130} height={30} layout="fixed" />
+              <Image unoptimized={true} src={'/assets/images/logo_formulir.svg'} width={130} height={30} layout="fixed" />
               <ContentHead>Formulir online serba bisa.</ContentHead>
               <ContentSub>
                 Buat formulir pendaftaran, terima pembayaran dan otomatisasi banyak hal. <br /> <br />

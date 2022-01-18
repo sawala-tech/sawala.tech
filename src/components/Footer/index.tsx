@@ -93,17 +93,17 @@ export const Footer: React.FC = () => {
             <div tw="flex space-x-3 md:space-x-0 justify-evenly w-3/12 text-gray-500 my-8">
               <Link href="https://www.facebook.com/sawala.tech/">
                 <a target="_blank">
-                  <Image src={'/assets/icons/facebook.png'} height={20} width={20} layout="fixed" />
+                  <Image unoptimized={true} src={'/assets/icons/facebook.png'} height={20} width={20} layout="fixed" />
                 </a>
               </Link>
               <Link href="https://www.instagram.com/sawala.tech/">
                 <a target="_blank">
-                  <Image src={'/assets/icons/instagram.png'} height={20} width={20} layout="fixed" />
+                  <Image unoptimized={true} src={'/assets/icons/instagram.png'} height={20} width={20} layout="fixed" />
                 </a>
               </Link>
               <Link href="https://www.linkedin.com/company/sawala/">
                 <a target="_blank">
-                  <Image src={'/assets/icons/linked.png'} height={20} width={20} layout="fixed" />
+                  <Image unoptimized={true} src={'/assets/icons/linked.png'} height={20} width={20} layout="fixed" />
                 </a>
               </Link>
             </div>

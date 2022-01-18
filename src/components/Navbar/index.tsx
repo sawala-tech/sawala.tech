@@ -29,10 +29,16 @@ export const Navbar: React.FC = () => {
         }`}>
         <Container tag="nav" tw="flex items-center justify-between">
           <div tw="relative w-[150px] h-auto flex justify-start p-5">
-            <Image src={'/assets/images/logo-sawala-tech.svg'} layout={'fill'} />
+            <Image unoptimized={true} src={'/assets/images/logo-sawala-tech.svg'} layout={'fill'} />
           </div>
           <div tw="relative w-auto h-auto flex justify-end p-4">
-            <Image src={'/assets/icons/navbar.svg'} onClick={() => setOpen(true)} className="cursor-pointer" layout="fill" />
+            <Image
+              unoptimized={true}
+              src={'/assets/icons/navbar.svg'}
+              onClick={() => setOpen(true)}
+              className="cursor-pointer"
+              layout="fill"
+            />
           </div>
         </Container>
       </header>

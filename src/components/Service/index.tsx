@@ -61,6 +61,7 @@ export const Service: React.FC = () => {
                       <div tw="grid grid-cols-2 grid-rows-5 gap-6">
                         <div tw="row-span-2 row-start-2">
                           <Image
+                            unoptimized={true}
                             src={'/assets/images/service-photo-1.png'}
                             width={150}
                             height={150}
@@ -70,6 +71,7 @@ export const Service: React.FC = () => {
                         </div>
                         <div tw="row-span-2 row-start-1">
                           <Image
+                            unoptimized={true}
                             src={'/assets/images/service-photo-2.png'}
                             width={150}
                             height={150}
@@ -79,6 +81,7 @@ export const Service: React.FC = () => {
                         </div>
                         <div tw="row-span-2 row-start-4">
                           <Image
+                            unoptimized={true}
                             src={'/assets/images/service-photo-3.png'}
                             width={150}
                             height={150}
@@ -88,6 +91,7 @@ export const Service: React.FC = () => {
                         </div>
                         <div tw="row-span-2 row-start-3">
                           <Image
+                            unoptimized={true}
                             src={'/assets/images/service-photo-4.png'}
                             width={150}
                             height={150}
@@ -120,16 +124,40 @@ export const Service: React.FC = () => {
                   <div tw="sm:w-max lg:w-7/12 mt-[2.125rem]">
                     <div tw="grid grid-cols-3 grid-rows-2">
                       <div tw="row-span-2">
-                        <Image src={'/assets/images/service-1.png'} width={110} height={115} layout="fixed" />
+                        <Image
+                          unoptimized={true}
+                          src={'/assets/images/service-1.png'}
+                          width={110}
+                          height={115}
+                          layout="fixed"
+                        />
                       </div>
                       <div tw="">
-                        <Image src={'/assets/images/service-2.png'} width={110} height={58} layout="fixed" />
+                        <Image
+                          unoptimized={true}
+                          src={'/assets/images/service-2.png'}
+                          width={110}
+                          height={58}
+                          layout="fixed"
+                        />
                       </div>
                       <div tw="">
-                        <Image src={'/assets/images/service-3.png'} width={110} height={57} layout="fixed" />
+                        <Image
+                          unoptimized={true}
+                          src={'/assets/images/service-3.png'}
+                          width={110}
+                          height={57}
+                          layout="fixed"
+                        />
                       </div>
                       <div tw="col-span-2">
-                        <Image src={'/assets/images/service-4.png'} width={220} height={47} layout="fixed" />
+                        <Image
+                          unoptimized={true}
+                          src={'/assets/images/service-4.png'}
+                          width={220}
+                          height={47}
+                          layout="fixed"
+                        />
                       </div>
                     </div>
                   </div>
@@ -147,6 +175,7 @@ export const Service: React.FC = () => {
                   <div tw="grid grid-cols-2 grid-rows-5 gap-6">
                     <div tw="row-span-2 row-start-2">
                       <Image
+                        unoptimized={true}
                         src={'/assets/images/service-photo-1.png'}
                         width={240}
                         height={240}
@@ -156,6 +185,7 @@ export const Service: React.FC = () => {
                     </div>
                     <div tw="row-span-2 row-start-1">
                       <Image
+                        unoptimized={true}
                         src={'/assets/images/service-photo-2.png'}
                         width={240}
                         height={240}
@@ -165,6 +195,7 @@ export const Service: React.FC = () => {
                     </div>
                     <div tw="row-span-2 row-start-4">
                       <Image
+                        unoptimized={true}
                         src={'/assets/images/service-photo-3.png'}
                         width={240}
                         height={240}
@@ -174,6 +205,7 @@ export const Service: React.FC = () => {
                     </div>
                     <div tw="row-span-2 row-start-3">
                       <Image
+                        unoptimized={true}
                         src={'/assets/images/service-photo-4.png'}
                         width={240}
                         height={240}
