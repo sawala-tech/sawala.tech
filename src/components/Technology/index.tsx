@@ -1,7 +1,8 @@
 import Button from '@/components/Buttons'
 import { Container } from '@/components/Layouts'
-import tw, { styled } from 'twin.macro'
+import Image from 'next/image'
 import { Element } from 'react-scroll'
+import tw, { styled } from 'twin.macro'
 
 const Background = styled.div`
   ${tw`bg-gray-50`}
@@ -9,7 +10,6 @@ const Background = styled.div`
 const Content = styled.div`
   ${tw`p-4 mt-8 sm:mt-0 flex flex-col lg:flex-row items-center justify-between w-full lg:px-0 lg:py-16`}
 `
-
 const ContentLeft = styled.div`
   ${tw`lg:flex lg:flex-col sm:grid sm:grid-cols-2 sm:gap-3 lg:w-1/3`}
 `
@@ -86,7 +86,7 @@ export const Technology: React.FC = () => {
     <>
       <Element name="technology" className="element">
         <Background>
-          <Container tag={'div'} tw="px-0 sm:p-5 md:p-14">
+          <Container tag={'div'} tw="px-0 pt-5 sm:pt-0 sm:p-5 md:p-14">
             <Content>
               <ContentLeft>
                 <ContentLeftTop>
@@ -101,22 +101,22 @@ export const Technology: React.FC = () => {
                 </ContentLeftTop>
                 <ContentLeftBot>
                   <div>
-                    <img src={'/assets/images/tech-left-1.png'} />
+                    <Image src={'/assets/images/tech-left-1.png'} height={70} width={170} layout="fixed" />
                   </div>
                   <div>
-                    <img src={'/assets/images/tech-left-4.png'} />
+                    <Image src={'/assets/images/tech-left-4.png'} height={70} width={170} layout="fixed" />
                   </div>
                   <div>
-                    <img src={'/assets/images/tech-left-2.png'} />
+                    <Image src={'/assets/images/tech-left-2.png'} height={70} width={170} layout="fixed" />
                   </div>
                   <div>
-                    <img src={'/assets/images/tech-left-5.png'} />
+                    <Image src={'/assets/images/tech-left-5.png'} height={70} width={170} layout="fixed" />
                   </div>
                   <div>
-                    <img src={'/assets/images/tech-left-3.png'} />
+                    <Image src={'/assets/images/tech-left-3.png'} height={70} width={170} layout="fixed" />
                   </div>
                   <div>
-                    <img src={'/assets/images/tech-left-6.png'} />
+                    <Image src={'/assets/images/tech-left-6.png'} height={70} width={170} layout="fixed" />
                   </div>
                 </ContentLeftBot>
               </ContentLeft>
@@ -164,22 +164,22 @@ export const Technology: React.FC = () => {
               <ContentBottomSub>
                 <ContentBottomtBot>
                   <div>
-                    <img src={'/assets/images/tech-left-1.png'} />
+                    <Image src={'/assets/images/tech-left-1.png'} height={70} width={170} layout="fixed" />
                   </div>
                   <div>
-                    <img src={'/assets/images/tech-left-4.png'} />
+                    <Image src={'/assets/images/tech-left-4.png'} height={70} width={170} layout="fixed" />
                   </div>
                   <div>
-                    <img src={'/assets/images/tech-left-2.png'} />
+                    <Image src={'/assets/images/tech-left-2.png'} height={70} width={170} layout="fixed" />
                   </div>
                   <div>
-                    <img src={'/assets/images/tech-left-5.png'} />
+                    <Image src={'/assets/images/tech-left-5.png'} height={70} width={170} layout="fixed" />
                   </div>
                   <div>
-                    <img src={'/assets/images/tech-left-3.png'} />
+                    <Image src={'/assets/images/tech-left-3.png'} height={70} width={170} layout="fixed" />
                   </div>
                   <div>
-                    <img src={'/assets/images/tech-left-6.png'} />
+                    <Image src={'/assets/images/tech-left-6.png'} height={70} width={170} layout="fixed" />
                   </div>
                 </ContentBottomtBot>
                 <Button text="See More" variant="primary" tw="hidden mt-6 rounded-full px-12" />

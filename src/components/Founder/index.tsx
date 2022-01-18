@@ -1,4 +1,5 @@
 import { Container } from '@/components/Layouts'
+import Image from 'next/image'
 import Link from 'next/link'
 import tw, { styled } from 'twin.macro'
 
@@ -29,7 +30,7 @@ export const Founder: React.FC = () => {
             <ContentGaleryItems>
               <div tw="border-2 border-primary rounded-md shadow flex flex-col p-5 text-gray-500">
                 <div tw="flex flex-col space-y-4 lg:space-y-0 sm:flex-row">
-                  <img src={'/assets/images/founder-1.png'} width={150} />
+                  <Image src={'/assets/images/founder-1.png'} width={150} height={150} layout={'fixed'} />
                   <div tw="flex flex-col sm:justify-center sm:ml-6">
                     <p tw="text-[#3B82F6] font-semibold text-xl sm:mb-2">Ahmad Nugraha, S.T, M.M</p>
                     <p tw="font-medium">Pendiri & Komisaris</p>
@@ -43,7 +44,7 @@ export const Founder: React.FC = () => {
                   </p>
                 </div>
                 <div tw="flex items-center mt-2">
-                  <img src={'/assets/icons/linkedin.png'} />
+                  <Image src={'/assets/icons/linkedin.png'} layout="fixed" width={30} height={30} />
                   <Link href="http://linkedin.com/in/ahmadnr">
                     <a target="_blank">
                       <p tw="ml-3 hover:cursor-pointer">linkedin.com/in/ahmadnr</p>
@@ -55,7 +56,7 @@ export const Founder: React.FC = () => {
             <ContentGaleryItems>
               <div tw="border-2 border-primary rounded-md shadow flex flex-col p-5 text-gray-500">
                 <div tw="flex flex-col space-y-4 lg:space-y-0 sm:flex-row">
-                  <img src={'/assets/images/founder-2.png'} width={150} />
+                  <Image src={'/assets/images/founder-2.png'} width={150} height={150} layout={'fixed'} />
                   <div tw="flex flex-col sm:justify-center sm:ml-6">
                     <p tw="text-[#3B82F6] font-semibold text-xl sm:mb-2">Sutisna S.Kom</p>
                     <p tw="font-medium">Pendiri & Direktur Utama</p>
@@ -69,7 +70,7 @@ export const Founder: React.FC = () => {
                   </p>
                 </div>
                 <div tw="flex items-center mt-2">
-                  <img src={'/assets/icons/linkedin.png'} />
+                  <Image src={'/assets/icons/linkedin.png'} layout="fixed" width={30} height={30} />
                   <Link href="http://linkedin.com/in/sutisna">
                     <a target="_blank">
                       <p tw="ml-3 hover:cursor-pointer">linkedin.com/in/sutisna</p>

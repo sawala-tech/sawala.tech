@@ -12,13 +12,14 @@ interface LinkProps {
   to: string
   title: string
   onClick: any
+  offset: number
 }
 
-const Links: FC<LinkProps> = ({ to, title, onClick }) => (
+const Links: FC<LinkProps> = ({ to, title, onClick, offset }) => (
   <>
     <NavLinks
       activeClass="active"
-      offset={-60}
+      offset={offset}
       to={to}
       spy={true}
       smooth={true}

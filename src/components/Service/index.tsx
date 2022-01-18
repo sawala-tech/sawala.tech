@@ -1,7 +1,8 @@
 import Button from '@/components/Buttons'
 import { Container } from '@/components/Layouts'
-import tw, { styled } from 'twin.macro'
+import Image from 'next/image'
 import { Element } from 'react-scroll'
+import tw, { styled } from 'twin.macro'
 
 const Background = styled.div`
   ${tw`bg-gray-50`}
@@ -9,20 +10,17 @@ const Background = styled.div`
 const Content = styled.div`
   ${tw`flex flex-col space-y-3 lg:flex-row lg:space-y-0 items-center justify-between w-full py-10 lg:py-16`}
 `
-
 const ContentLeft = styled.div`
   ${tw`lg:w-1/2`}
 `
 const ContentLeftService = styled.div`
   ${tw`lg:w-2/3`}
 `
-
 const ContentRight = styled.div`
-  ${tw`hidden lg:block lg:w-1/2`}
+  ${tw`hidden lg:flex justify-center lg:w-1/2`}
 `
-
 const ContentMobileRight = styled.div`
-  ${tw`block lg:hidden lg:w-1/2 py-10`}
+  ${tw`flex justify-center lg:hidden lg:w-1/2 py-10`}
 `
 
 export const Service: React.FC = () => {
@@ -62,16 +60,40 @@ export const Service: React.FC = () => {
                     <div>
                       <div tw="grid grid-cols-2 grid-rows-5 gap-6">
                         <div tw="row-span-2 row-start-2">
-                          <img tw="rounded-md" src={'/assets/images/service-photo-1.png'} />
+                          <Image
+                            src={'/assets/images/service-photo-1.png'}
+                            width={150}
+                            height={150}
+                            layout="fixed"
+                            tw="rounded-md"
+                          />
                         </div>
                         <div tw="row-span-2 row-start-1">
-                          <img tw="rounded-md" src={'/assets/images/service-photo-2.png'} />
+                          <Image
+                            src={'/assets/images/service-photo-2.png'}
+                            width={150}
+                            height={150}
+                            layout="fixed"
+                            tw="rounded-md"
+                          />
                         </div>
                         <div tw="row-span-2 row-start-4">
-                          <img tw="rounded-md" src={'/assets/images/service-photo-3.png'} />
+                          <Image
+                            src={'/assets/images/service-photo-3.png'}
+                            width={150}
+                            height={150}
+                            layout="fixed"
+                            tw="rounded-md"
+                          />
                         </div>
                         <div tw="row-span-2 row-start-3">
-                          <img tw="rounded-md" src={'/assets/images/service-photo-4.png'} />
+                          <Image
+                            src={'/assets/images/service-photo-4.png'}
+                            width={150}
+                            height={150}
+                            layout="fixed"
+                            tw="rounded-md"
+                          />
                         </div>
                       </div>
                     </div>
@@ -98,16 +120,16 @@ export const Service: React.FC = () => {
                   <div tw="sm:w-max lg:w-7/12 mt-[2.125rem]">
                     <div tw="grid grid-cols-3 grid-rows-2">
                       <div tw="row-span-2">
-                        <img src={'/assets/images/service-1.png'} />
+                        <Image src={'/assets/images/service-1.png'} width={110} height={115} layout="fixed" />
                       </div>
                       <div tw="">
-                        <img src={'/assets/images/service-2.png'} />
+                        <Image src={'/assets/images/service-2.png'} width={110} height={58} layout="fixed" />
                       </div>
                       <div tw="">
-                        <img src={'/assets/images/service-3.png'} />
+                        <Image src={'/assets/images/service-3.png'} width={110} height={57} layout="fixed" />
                       </div>
                       <div tw="col-span-2">
-                        <img src={'/assets/images/service-4.png'} />
+                        <Image src={'/assets/images/service-4.png'} width={220} height={47} layout="fixed" />
                       </div>
                     </div>
                   </div>
@@ -124,16 +146,40 @@ export const Service: React.FC = () => {
                 <div>
                   <div tw="grid grid-cols-2 grid-rows-5 gap-6">
                     <div tw="row-span-2 row-start-2">
-                      <img tw="rounded-md" src={'/assets/images/service-photo-1.png'} />
+                      <Image
+                        src={'/assets/images/service-photo-1.png'}
+                        width={240}
+                        height={240}
+                        layout="fixed"
+                        tw="rounded-md"
+                      />
                     </div>
                     <div tw="row-span-2 row-start-1">
-                      <img tw="rounded-md" src={'/assets/images/service-photo-2.png'} />
+                      <Image
+                        src={'/assets/images/service-photo-2.png'}
+                        width={240}
+                        height={240}
+                        layout="fixed"
+                        tw="rounded-md"
+                      />
                     </div>
                     <div tw="row-span-2 row-start-4">
-                      <img tw="rounded-md" src={'/assets/images/service-photo-3.png'} />
+                      <Image
+                        src={'/assets/images/service-photo-3.png'}
+                        width={240}
+                        height={240}
+                        layout="fixed"
+                        tw="rounded-md"
+                      />
                     </div>
                     <div tw="row-span-2 row-start-3">
-                      <img tw="rounded-md" src={'/assets/images/service-photo-4.png'} />
+                      <Image
+                        src={'/assets/images/service-photo-4.png'}
+                        width={240}
+                        height={240}
+                        layout="fixed"
+                        tw="rounded-md"
+                      />
                     </div>
                   </div>
                 </div>

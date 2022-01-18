@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { FC } from 'react'
 interface ClientProps {
   image: string
@@ -5,7 +6,7 @@ interface ClientProps {
 
 const Client: FC<ClientProps> = ({ image }) => (
   <>
-    <img src={image} />
+    <Image src={image} layout="fixed" width={140} height={65} objectFit="contain" />
   </>
 )
 
