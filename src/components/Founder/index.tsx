@@ -35,11 +35,13 @@ export const Founder: React.FC = () => {
                     <p tw="font-medium">Pendiri & Komisaris</p>
                   </div>
                 </div>
-                <p tw="my-6 lg:pr-16">
-                  Lebih dari 16 tahun pengalaman profesional di bidang Teknologi Informasi dan Komunikasi (TIK). Memiliki
-                  passion di bidang bisnis digital dan socio-technopreneurship. Berpengalaman global bekerja di berbagai
-                  perusahaan multinasional.
-                </p>
+                <div tw="flex md:h-[10rem]">
+                  <p tw="my-6 lg:pr-16">
+                    Lebih dari 16 tahun pengalaman profesional di bidang Teknologi Informasi dan Komunikasi (TIK). Memiliki
+                    passion di bidang bisnis digital dan socio-technopreneurship. Berpengalaman global bekerja di berbagai
+                    perusahaan multinasional.
+                  </p>
+                </div>
                 <div tw="flex items-center mt-2">
                   <img src={'/assets/icons/linkedin.png'} />
                   <Link href="http://linkedin.com/in/ahmadnr">
@@ -59,10 +61,13 @@ export const Founder: React.FC = () => {
                     <p tw="font-medium">Pendiri & Direktur Utama</p>
                   </div>
                 </div>
-                <p tw="my-6 lg:pr-16">
-                  Pengalaman profesional di bidang Teknologi Informasi dan Komunikasi (TIK) lebih dari 10 tahun. Terpilih
-                  sebagai YSEALI Academic Fellows 2016 untuk kuliah singkat di University of Connecticut di Amerika Serikat.
-                </p>
+                <div tw="flex md:h-[10rem]">
+                  <p tw="my-6 lg:pr-16">
+                    Pengalaman profesional di bidang Teknologi Informasi dan Komunikasi (TIK) lebih dari 10 tahun. Terpilih
+                    sebagai YSEALI Academic Fellows 2016 untuk kuliah singkat di University of Connecticut di Amerika
+                    Serikat.
+                  </p>
+                </div>
                 <div tw="flex items-center mt-2">
                   <img src={'/assets/icons/linkedin.png'} />
                   <Link href="http://linkedin.com/in/sutisna">
