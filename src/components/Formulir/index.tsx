@@ -14,11 +14,9 @@ const Background = styled.div`
 const Content = styled.div`
   ${tw`flex flex-col items-start justify-between lg:w-[55%] pt-10 pb-72 lg:pt-0 md:py-[4.5rem] text-white`}
 `
-
 const ContentHead = styled.h1`
   ${tw`mt-4 mb-5 text-3xl font-bold`}
 `
-
 const ContentSub = styled.p`
   ${tw`lg:w-10/12 mb-4 md:mb-8`}
 `
@@ -30,7 +28,7 @@ export const Formulir: React.FC = () => {
         <Background>
           <Container tag={'div'} tw="p-5 md:p-14">
             <Content>
-              <Image src={'/assets/images/formulir.png'} width={130} height={30} layout="fixed" />
+              <Image unoptimized={true} src={'/assets/images/logo_formulir.svg'} width={130} height={30} layout="fixed" />
               <ContentHead>Formulir online serba bisa.</ContentHead>
               <ContentSub>
                 Buat formulir pendaftaran, terima pembayaran dan otomatisasi banyak hal. <br /> <br />

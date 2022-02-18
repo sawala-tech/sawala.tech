@@ -101,22 +101,58 @@ export const Technology: React.FC = () => {
                 </ContentLeftTop>
                 <ContentLeftBot>
                   <div>
-                    <Image src={'/assets/images/tech-left-1.png'} height={70} width={170} layout="fixed" />
+                    <Image
+                      unoptimized={true}
+                      src={'/assets/images/tech-left-1.png'}
+                      height={70}
+                      width={170}
+                      layout="fixed"
+                    />
                   </div>
                   <div>
-                    <Image src={'/assets/images/tech-left-4.png'} height={70} width={170} layout="fixed" />
+                    <Image
+                      unoptimized={true}
+                      src={'/assets/images/tech-left-4.png'}
+                      height={70}
+                      width={170}
+                      layout="fixed"
+                    />
                   </div>
                   <div>
-                    <Image src={'/assets/images/tech-left-2.png'} height={70} width={170} layout="fixed" />
+                    <Image
+                      unoptimized={true}
+                      src={'/assets/images/tech-left-2.png'}
+                      height={70}
+                      width={170}
+                      layout="fixed"
+                    />
                   </div>
                   <div>
-                    <Image src={'/assets/images/tech-left-5.png'} height={70} width={170} layout="fixed" />
+                    <Image
+                      unoptimized={true}
+                      src={'/assets/images/tech-left-5.png'}
+                      height={70}
+                      width={170}
+                      layout="fixed"
+                    />
                   </div>
                   <div>
-                    <Image src={'/assets/images/tech-left-3.png'} height={70} width={170} layout="fixed" />
+                    <Image
+                      unoptimized={true}
+                      src={'/assets/images/tech-left-3.png'}
+                      height={70}
+                      width={170}
+                      layout="fixed"
+                    />
                   </div>
                   <div>
-                    <Image src={'/assets/images/tech-left-6.png'} height={70} width={170} layout="fixed" />
+                    <Image
+                      unoptimized={true}
+                      src={'/assets/images/tech-left-6.png'}
+                      height={70}
+                      width={170}
+                      layout="fixed"
+                    />
                   </div>
                 </ContentLeftBot>
               </ContentLeft>
@@ -164,22 +200,58 @@ export const Technology: React.FC = () => {
               <ContentBottomSub>
                 <ContentBottomtBot>
                   <div>
-                    <Image src={'/assets/images/tech-left-1.png'} height={70} width={170} layout="fixed" />
+                    <Image
+                      unoptimized={true}
+                      src={'/assets/images/tech-left-1.png'}
+                      height={70}
+                      width={170}
+                      layout="fixed"
+                    />
                   </div>
                   <div>
-                    <Image src={'/assets/images/tech-left-4.png'} height={70} width={170} layout="fixed" />
+                    <Image
+                      unoptimized={true}
+                      src={'/assets/images/tech-left-4.png'}
+                      height={70}
+                      width={170}
+                      layout="fixed"
+                    />
                   </div>
                   <div>
-                    <Image src={'/assets/images/tech-left-2.png'} height={70} width={170} layout="fixed" />
+                    <Image
+                      unoptimized={true}
+                      src={'/assets/images/tech-left-2.png'}
+                      height={70}
+                      width={170}
+                      layout="fixed"
+                    />
                   </div>
                   <div>
-                    <Image src={'/assets/images/tech-left-5.png'} height={70} width={170} layout="fixed" />
+                    <Image
+                      unoptimized={true}
+                      src={'/assets/images/tech-left-5.png'}
+                      height={70}
+                      width={170}
+                      layout="fixed"
+                    />
                   </div>
                   <div>
-                    <Image src={'/assets/images/tech-left-3.png'} height={70} width={170} layout="fixed" />
+                    <Image
+                      unoptimized={true}
+                      src={'/assets/images/tech-left-3.png'}
+                      height={70}
+                      width={170}
+                      layout="fixed"
+                    />
                   </div>
                   <div>
-                    <Image src={'/assets/images/tech-left-6.png'} height={70} width={170} layout="fixed" />
+                    <Image
+                      unoptimized={true}
+                      src={'/assets/images/tech-left-6.png'}
+                      height={70}
+                      width={170}
+                      layout="fixed"
+                    />
                   </div>
                 </ContentBottomtBot>
                 <Button text="See More" variant="primary" tw="hidden mt-6 rounded-full px-12" />
