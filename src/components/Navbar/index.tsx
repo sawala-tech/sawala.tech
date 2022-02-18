@@ -28,7 +28,7 @@ export const Navbar: React.FC = () => {
             : 'transition-all duration-500 py-5 lg:py-10'
         }`}>
         <Container tag="nav" tw="flex items-center justify-between">
-          <div tw="relative w-[150px] h-auto flex justify-start p-5">
+          <div tw="relative w-[120px] h-auto flex justify-start p-5">
             <Image unoptimized={true} src={'/assets/images/logo-sawala-tech.svg'} layout={'fill'} />
           </div>
           <div tw="relative w-auto h-auto flex justify-end p-4">
