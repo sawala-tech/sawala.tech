@@ -13,7 +13,7 @@ const Content = styled.div`
   ${tw`flex space-y-10 flex-col-reverse items-center justify-between w-full lg:flex-row`}
 `
 const ContentText = styled.div`
-  ${tw`px-5 md:w-5/6 lg:w-[59%] md:px-5 lg:px-0`}
+  ${tw`px-5 md:w-5/6 lg:w-[56%] md:px-5 lg:px-0`}
 `
 const ContentTextHead = styled.p`
   ${tw`h-auto pt-7 pb-5 lg:pb-8 lg:mb-2 font-bold text-2xl md:text-3xl lg:text-5xl`}
@@ -25,7 +25,7 @@ const ContentTextSub = styled.p`
   ${tw`lg:pr-16 lg:text-xl text-gray-500 `}
 `
 const ContentImage = styled.div`
-  ${tw`relative items-center lg:w-2/5 lg:pr-2 w-full flex justify-center h-[15rem]`}
+  ${tw`relative items-center lg:w-[44%] w-full flex justify-center h-[15rem]`}
 `
 
 export const Hero: React.FC = () => {
@@ -67,6 +67,7 @@ export const Hero: React.FC = () => {
                   width={isDesktop ? 390 : 0}
                   height={isDesktop ? 390 : 0}
                   layout={isDesktop ? 'fixed' : 'fill'}
+                  unoptimized={true}
                 />
               </ContentImage>
             </Content>
