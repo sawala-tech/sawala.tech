@@ -30,14 +30,22 @@ export const Founder: React.FC = () => {
             <ContentGaleryItems>
               <div tw="border-2 border-primary rounded-md shadow flex flex-col p-5 text-gray-500">
                 <div tw="flex flex-col space-y-4 lg:space-y-0 sm:flex-row">
-                  <Image unoptimized={true} src={'/assets/images/founder-1.png'} width={150} height={150} layout={'fixed'} />
+                  <div>
+                    <Image
+                      unoptimized={true}
+                      src={'/assets/images/founder-1.png'}
+                      width={145}
+                      height={145}
+                      layout={'fixed'}
+                    />
+                  </div>
                   <div tw="flex flex-col sm:justify-center sm:ml-6">
                     <p tw="text-[#3B82F6] font-semibold text-xl sm:mb-2">Ahmad Nugraha, S.T, M.M</p>
                     <p tw="font-medium">Pendiri & Komisaris</p>
                   </div>
                 </div>
-                <div tw="flex md:h-[10rem]">
-                  <p tw="my-6 lg:pr-16">
+                <div tw="my-4 md:h-[9rem] lg:h-[10rem] lg:my-2 flex justify-items-center">
+                  <p tw="lg:w-[88%]">
                     Lebih dari 16 tahun pengalaman profesional di bidang Teknologi Informasi dan Komunikasi (TIK). Memiliki
                     passion di bidang bisnis digital dan socio-technopreneurship. Berpengalaman global bekerja di berbagai
                     perusahaan multinasional.
@@ -56,14 +64,22 @@ export const Founder: React.FC = () => {
             <ContentGaleryItems>
               <div tw="border-2 border-primary rounded-md shadow flex flex-col p-5 text-gray-500">
                 <div tw="flex flex-col space-y-4 lg:space-y-0 sm:flex-row">
-                  <Image unoptimized={true} src={'/assets/images/founder-2.png'} width={150} height={150} layout={'fixed'} />
+                  <div>
+                    <Image
+                      unoptimized={true}
+                      src={'/assets/images/founder-2.png'}
+                      width={145}
+                      height={145}
+                      layout={'fixed'}
+                    />
+                  </div>
                   <div tw="flex flex-col sm:justify-center sm:ml-6">
                     <p tw="text-[#3B82F6] font-semibold text-xl sm:mb-2">Sutisna S.Kom</p>
                     <p tw="font-medium">Pendiri & Direktur Utama</p>
                   </div>
                 </div>
-                <div tw="flex md:h-[10rem]">
-                  <p tw="my-6 lg:pr-16">
+                <div tw="my-4 md:h-[9rem] lg:h-[10rem] lg:my-2 flex justify-items-center">
+                  <p tw="lg:w-[88%]">
                     Pengalaman profesional di bidang Teknologi Informasi dan Komunikasi (TIK) lebih dari 10 tahun. Terpilih
                     sebagai YSEALI Academic Fellows 2016 untuk kuliah singkat di University of Connecticut di Amerika
                     Serikat.

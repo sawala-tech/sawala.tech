@@ -177,8 +177,8 @@ export const Service: React.FC = () => {
                       <Image
                         unoptimized={true}
                         src={'/assets/images/service-photo-1.png'}
-                        width={240}
-                        height={240}
+                        width={210}
+                        height={210}
                         layout="fixed"
                         tw="rounded-md"
                       />
@@ -187,8 +187,8 @@ export const Service: React.FC = () => {
                       <Image
                         unoptimized={true}
                         src={'/assets/images/service-photo-2.png'}
-                        width={240}
-                        height={240}
+                        width={210}
+                        height={210}
                         layout="fixed"
                         tw="rounded-md"
                       />
@@ -197,8 +197,8 @@ export const Service: React.FC = () => {
                       <Image
                         unoptimized={true}
                         src={'/assets/images/service-photo-3.png'}
-                        width={240}
-                        height={240}
+                        width={210}
+                        height={210}
                         layout="fixed"
                         tw="rounded-md"
                       />
@@ -207,8 +207,8 @@ export const Service: React.FC = () => {
                       <Image
                         unoptimized={true}
                         src={'/assets/images/service-photo-4.png'}
-                        width={240}
-                        height={240}
+                        width={210}
+                        height={210}
                         layout="fixed"
                         tw="rounded-md"
                       />

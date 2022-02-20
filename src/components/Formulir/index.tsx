@@ -6,8 +6,13 @@ import Image from 'next/image'
 
 const Background = styled.div`
   ${tw`bg-right-bottom bg-no-repeat bg-primary bg-formulir-background`}
-  background-size: auto;
+  @media (max-width: 1100px) {
+    background-size: 50%;
+  }
   @media (max-width: 1024px) {
+    background-size: 50%;
+  }
+  @media (max-width: 640px) {
     background-size: 350px;
   }
 `
@@ -18,7 +23,7 @@ const ContentHead = styled.h1`
   ${tw`mt-4 mb-5 text-3xl font-bold`}
 `
 const ContentSub = styled.p`
-  ${tw`lg:w-10/12 mb-4 md:mb-8`}
+  ${tw`md:w-6/12 lg:w-10/12 mb-4 md:mb-8`}
 `
 
 export const Formulir: React.FC = () => {
