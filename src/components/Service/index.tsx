@@ -22,7 +22,12 @@ const ContentRight = styled.div`
 const ContentMobileRight = styled.div`
   ${tw`flex justify-center lg:hidden lg:w-1/2 py-10`}
 `
-
+const PartnerWrapper = styled.div`
+  ${tw`sm:w-max lg:w-8/12 mt-[2.125rem]`}
+  @media (max-width: 1210px) and (min-width: 1024px) {
+    ${tw`w-9/12`}
+  }
+`
 export const Service: React.FC = () => {
   return (
     <>
@@ -121,7 +126,7 @@ export const Service: React.FC = () => {
                       </li>
                     </ul>
                   </ContentLeftService>
-                  <div tw="sm:w-max lg:w-7/12 mt-[2.125rem]">
+                  <PartnerWrapper>
                     <div tw="grid grid-cols-3 grid-rows-2">
                       <div tw="row-span-2">
                         <Image
@@ -160,7 +165,7 @@ export const Service: React.FC = () => {
                         />
                       </div>
                     </div>
-                  </div>
+                  </PartnerWrapper>
                 </div>
                 <Button
                   text="Contact Us"

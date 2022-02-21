@@ -29,7 +29,7 @@ const ContentBottomtBot = styled.div`
   ${tw`justify-items-center block sm:hidden  grid grid-cols-2 gap-2`}
 `
 const ContentLeftBot = styled.div`
-  ${tw`py-10 lg:py-0 lg:mt-[2.875rem] justify-items-center hidden sm:grid sm:grid-cols-2 sm:gap-2 lg:grid-rows-3`}
+  ${tw`py-10 lg:py-0 lg:mt-[2.875rem] justify-items-center hidden sm:grid sm:grid-cols-2 md:gap-5 sm:gap-2 lg:grid-rows-3`}
 `
 const ContentRight = styled.div`
   ${tw`space-y-5 py-5 sm:space-y-0 flex-col sm:grid sm:grid-cols-2 sm:gap-4 lg:flex lg:flex-row lg:w-2/3 justify-evenly lg:justify-end lg:gap-12`}
@@ -81,6 +81,12 @@ const ContentRightRight = styled.div`
 const Ul = styled.ul`
   ${tw`list-outside ml-4 list-disc my-5 text-[#3B82F6]`}
 `
+const ImageWrapper = styled.div`
+  ${tw`w-[170px] h-[70px] relative`}
+  @media (max-width: 1160px) and (min-width: 1024px) {
+    ${tw`w-[150px] h-[60px]`}
+  }
+`
 export const Technology: React.FC = () => {
   return (
     <>
@@ -100,60 +106,24 @@ export const Technology: React.FC = () => {
                   </ContentLeftTopSub>
                 </ContentLeftTop>
                 <ContentLeftBot>
-                  <div>
-                    <Image
-                      unoptimized={true}
-                      src={'/assets/images/tech-left-1.png'}
-                      height={70}
-                      width={170}
-                      layout="fixed"
-                    />
-                  </div>
-                  <div>
-                    <Image
-                      unoptimized={true}
-                      src={'/assets/images/tech-left-4.png'}
-                      height={70}
-                      width={170}
-                      layout="fixed"
-                    />
-                  </div>
-                  <div>
-                    <Image
-                      unoptimized={true}
-                      src={'/assets/images/tech-left-2.png'}
-                      height={70}
-                      width={170}
-                      layout="fixed"
-                    />
-                  </div>
-                  <div>
-                    <Image
-                      unoptimized={true}
-                      src={'/assets/images/tech-left-5.png'}
-                      height={70}
-                      width={170}
-                      layout="fixed"
-                    />
-                  </div>
-                  <div>
-                    <Image
-                      unoptimized={true}
-                      src={'/assets/images/tech-left-3.png'}
-                      height={70}
-                      width={170}
-                      layout="fixed"
-                    />
-                  </div>
-                  <div>
-                    <Image
-                      unoptimized={true}
-                      src={'/assets/images/tech-left-6.png'}
-                      height={70}
-                      width={170}
-                      layout="fixed"
-                    />
-                  </div>
+                  <ImageWrapper>
+                    <Image unoptimized={true} src={'/assets/images/tech-left-1.png'} layout="fill" />
+                  </ImageWrapper>
+                  <ImageWrapper>
+                    <Image unoptimized={true} src={'/assets/images/tech-left-4.png'} layout="fill" />
+                  </ImageWrapper>
+                  <ImageWrapper>
+                    <Image unoptimized={true} src={'/assets/images/tech-left-2.png'} layout="fill" />
+                  </ImageWrapper>
+                  <ImageWrapper>
+                    <Image unoptimized={true} src={'/assets/images/tech-left-5.png'} layout="fill" />
+                  </ImageWrapper>
+                  <ImageWrapper>
+                    <Image unoptimized={true} src={'/assets/images/tech-left-3.png'} layout="fill" />
+                  </ImageWrapper>
+                  <ImageWrapper>
+                    <Image unoptimized={true} src={'/assets/images/tech-left-6.png'} layout="fill" />
+                  </ImageWrapper>
                 </ContentLeftBot>
               </ContentLeft>
               <ContentRight>
