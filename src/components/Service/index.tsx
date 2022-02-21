@@ -23,7 +23,7 @@ const ContentMobileRight = styled.div`
   ${tw`flex justify-center lg:hidden lg:w-1/2 py-10`}
 `
 const PartnerWrapper = styled.div`
-  ${tw`sm:w-max lg:w-8/12 mt-[2.125rem] bg-primary`}
+  ${tw`sm:w-max lg:w-8/12 mt-[2.125rem]`}
   @media (max-width: 1210px) and (min-width: 1024px) {
     ${tw`w-9/12`}
   }
