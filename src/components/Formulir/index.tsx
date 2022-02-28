@@ -12,18 +12,24 @@ const Background = styled.div`
   @media (max-width: 1024px) {
     background-size: 50%;
   }
+  @media (max-width: 768px) {
+    background-size: 60%;
+  }
   @media (max-width: 640px) {
     background-size: 350px;
   }
 `
 const Content = styled.div`
-  ${tw`flex flex-col items-start justify-between lg:w-[55%] pt-10 pb-72 lg:pt-0 md:py-[4.5rem] text-white`}
+  ${tw`flex flex-col items-start justify-between lg:w-[55%] md:pt-0 pt-10 pb-72 md:pb-36 lg:pt-0 md:pb-[4.5rem] text-white`}
 `
 const ContentHead = styled.h1`
   ${tw`mt-4 mb-5 text-3xl font-bold`}
 `
 const ContentSub = styled.p`
   ${tw`md:w-6/12 lg:w-10/12 mb-4 md:mb-8`}
+  @media (max-width: 1024px) and (min-width: 768px) {
+    ${tw`w-full mb-24`}
+  }
 `
 
 export const Formulir: React.FC = () => {
