@@ -22,7 +22,7 @@ const DescriptionWrapper = styled.div`
     ${tw`h-[10rem]`}
   }
   @media (max-width: 904px) and (min-width: 768px) {
-    ${tw`h-[13rem]`}
+    ${tw`h-[12rem]`}
   }
 `
 
