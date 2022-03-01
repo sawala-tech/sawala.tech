@@ -20,7 +20,7 @@ const ContentRight = styled.div`
   ${tw`hidden lg:flex justify-center lg:w-1/2`}
 `
 const ContentMobileRight = styled.div`
-  ${tw`flex justify-center lg:hidden lg:w-1/2 py-10`}
+  ${tw`flex md:justify-start justify-center lg:hidden lg:w-1/2 py-10`}
 `
 const PartnerWrapper = styled.div`
   ${tw`sm:w-max lg:w-8/12 mt-[2.125rem]`}
