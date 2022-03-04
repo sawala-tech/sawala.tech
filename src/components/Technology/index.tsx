@@ -11,7 +11,7 @@ const Content = styled.div`
   ${tw`p-4 mt-8 sm:mt-0 flex flex-col lg:flex-row items-center justify-between w-full lg:px-0 lg:py-16`}
 `
 const ContentLeft = styled.div`
-  ${tw`lg:flex lg:flex-col sm:grid sm:grid-cols-2 sm:gap-3 lg:w-1/3`}
+  ${tw`lg:flex lg:flex-col sm:grid sm:grid-cols-2 sm:gap-7 lg:w-1/3`}
 `
 const ContentLeftTop = styled.div`
   ${``}

@@ -1,6 +1,7 @@
 import { Container } from '@/components/Layouts'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState, useEffect } from 'react'
 import tw, { styled } from 'twin.macro'
 
 const Content = styled.div`
@@ -20,9 +21,31 @@ const DescriptionWrapper = styled.div`
   @media (max-width: 1160px) and (min-width: 1024px) {
     ${tw`h-[10rem]`}
   }
+  @media (max-width: 904px) and (min-width: 768px) {
+    ${tw`h-[12rem]`}
+  }
 `
 
 export const Founder: React.FC = () => {
+  const [isDesktop, setIsDesktop] = useState(false)
+  const [isIpad, setIsIpad] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1024) {
+        setIsDesktop(true)
+      } else if (window.innerWidth > 760) {
+        setIsIpad(true)
+        setIsDesktop(false)
+      } else {
+        setIsIpad(false)
+        setIsDesktop(false)
+      }
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
   return (
     <>
       <Container tag={'div'} tw="px-0 sm:p-5 md:p-10">
@@ -38,14 +61,14 @@ export const Founder: React.FC = () => {
                     <Image
                       unoptimized={true}
                       src={'/assets/images/founder-1.png'}
-                      width={145}
-                      height={145}
+                      width={isDesktop ? 145 : isIpad ? 100 : 145}
+                      height={isDesktop ? 145 : isIpad ? 100 : 145}
                       layout={'fixed'}
                     />
                   </div>
-                  <div tw="flex flex-col sm:justify-center sm:ml-6">
-                    <p tw="text-[#3B82F6] font-semibold text-xl sm:mb-2">Ahmad Nugraha, S.T, M.M</p>
-                    <p tw="font-medium">Pendiri & Komisaris</p>
+                  <div tw="flex flex-col sm:justify-center sm:ml-4">
+                    <p tw="text-[#3B82F6] font-semibold md:text-base text-xl sm:mb-2">Ahmad Nugraha, S.T, M.M</p>
+                    <p tw="md:text-base lg:font-medium">Pendiri & Komisaris</p>
                   </div>
                 </div>
                 <DescriptionWrapper>
@@ -72,14 +95,14 @@ export const Founder: React.FC = () => {
                     <Image
                       unoptimized={true}
                       src={'/assets/images/founder-2.png'}
-                      width={145}
-                      height={145}
+                      width={isDesktop ? 145 : isIpad ? 100 : 145}
+                      height={isDesktop ? 145 : isIpad ? 100 : 145}
                       layout={'fixed'}
                     />
                   </div>
-                  <div tw="flex flex-col sm:justify-center sm:ml-6">
-                    <p tw="text-[#3B82F6] font-semibold text-xl sm:mb-2">Sutisna S.Kom</p>
-                    <p tw="font-medium">Pendiri & Direktur Utama</p>
+                  <div tw="flex flex-col sm:justify-center sm:ml-4">
+                    <p tw="text-[#3B82F6] font-semibold md:text-base text-xl sm:mb-2">Sutisna S.Kom</p>
+                    <p tw="md:text-base lg:font-medium">Pendiri & Direktur Utama</p>
                   </div>
                 </div>
                 <DescriptionWrapper>
