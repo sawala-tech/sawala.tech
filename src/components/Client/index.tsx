@@ -9,7 +9,7 @@ const Content = styled.div`
   ${tw`flex flex-col items-center justify-between w-full pt-16 pb-16 lg:pb-[5.625rem] text-center`}
 `
 const ContentHead = styled.h1`
-  ${tw`text-3xl lg:text-4xl font-bold mb-7`}
+  ${tw`text-3xl font-bold lg:text-4xl mb-7`}
 `
 const Contentsub = styled.div`
   ${tw`text-gray-500 md:px-44 lg:px-44`}
