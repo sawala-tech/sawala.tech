@@ -6,7 +6,7 @@ interface SolutionProps {
 
 const Solution: FC<SolutionProps> = ({ image }) => (
   <>
-    <Image unoptimized={true} src={image} layout="fixed" width={45} height={45} objectFit="contain" />
+    <Image unoptimized={true} src={image} layout="fixed" width={50} height={50} objectFit="contain" />
   </>
 )
 
