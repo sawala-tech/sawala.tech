@@ -5,6 +5,9 @@ import dataClient from '@jsons/client.json'
 import tw, { styled } from 'twin.macro'
 import { Element } from 'react-scroll'
 
+const Background = styled.div`
+  ${tw`bg-gray-50`}
+`
 const Content = styled.div`
   ${tw`flex flex-col items-center justify-between w-full pt-16 pb-16 lg:pb-[5.625rem] text-center`}
 `
@@ -25,25 +28,27 @@ export const Client: React.FC = () => {
   return (
     <>
       <Element name="client" className="element">
-        <Container>
-          <Content>
-            <ContentHead>
-              Featured Clients<span tw="text-secondary">_</span>
-            </ContentHead>
-            <Contentsub>
-              Kami telah dipercaya perusahaan nasional dan internasional untuk mengembangkan, mengelola dan memelihara
-              software/sistem informasi mereka.
-            </Contentsub>
-            <ContentGalery>
-              {dataClient.map((dataClient: { thumb: string }, i: number) => (
-                <ContentGaleryItems key={i}>
-                  <ClienCard image={dataClient.thumb}></ClienCard>
-                </ContentGaleryItems>
-              ))}
-            </ContentGalery>
-            <Button text="More Client" tw="hidden rounded-full px-12 mt-10"></Button>
-          </Content>
-        </Container>
+        <Background>
+          <Container>
+            <Content>
+              <ContentHead>
+                Featured Clients<span tw="text-secondary">_</span>
+              </ContentHead>
+              <Contentsub>
+                Kami telah dipercaya perusahaan nasional dan internasional untuk mengembangkan, mengelola dan memelihara
+                software/sistem informasi mereka.
+              </Contentsub>
+              <ContentGalery>
+                {dataClient.map((dataClient: { thumb: string }, i: number) => (
+                  <ContentGaleryItems key={i}>
+                    <ClienCard image={dataClient.thumb}></ClienCard>
+                  </ContentGaleryItems>
+                ))}
+              </ContentGalery>
+              <Button text="More Client" tw="hidden rounded-full px-12 mt-10"></Button>
+            </Content>
+          </Container>
+        </Background>
       </Element>
     </>
   )
