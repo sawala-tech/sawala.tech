@@ -30,7 +30,7 @@ const SubTitle = styled.div`
 export const Solution: React.FC = () => {
   return (
     <>
-      <Element name="about" className="element">
+      <Element name="solution" className="element">
         <Container tag={'div'} tw="px-5 md:px-14">
           <Content>
             <ContentHead>
