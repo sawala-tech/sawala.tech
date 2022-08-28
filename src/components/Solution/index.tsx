@@ -1,7 +1,6 @@
-import dataSolution from '@jsons/solution.json'
 import { Element } from 'react-scroll'
 import tw, { styled } from 'twin.macro'
-
+import dataSolution from '@jsons/solution.json'
 import SolutionCard from '@/components/Card/Solution'
 import { Container } from '@/components/Layouts'
 
