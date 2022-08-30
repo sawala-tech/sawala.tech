@@ -8,19 +8,19 @@ const Background = styled.div`
   ${tw`bg-gray-50`}
 `
 const Content = styled.div`
-  ${tw`flex flex-col items-center justify-between w-full py-10 space-y-3 lg:flex-row lg:space-y-0 lg:py-16`}
+  ${tw`flex flex-col space-y-3 lg:flex-row lg:space-y-0 items-center justify-between w-full py-10 lg:py-16`}
 `
 const ContentLeft = styled.div`
-  ${tw``}
+  ${tw`lg:w-1/2`}
 `
 const ContentLeftService = styled.div`
   ${tw`lg:w-2/3`}
 `
 const ContentRight = styled.div`
-  ${tw`justify-center hidden lg:flex lg:w-1/2`}
+  ${tw`hidden lg:flex justify-center lg:w-1/2`}
 `
 const ContentMobileRight = styled.div`
-  ${tw`flex justify-center py-10 md:justify-start lg:hidden lg:w-1/2`}
+  ${tw`flex md:justify-start justify-center lg:hidden lg:w-1/2 py-10`}
 `
 const PartnerWrapper = styled.div`
   ${tw`sm:w-max lg:w-8/12 mt-[2.125rem]`}
@@ -59,13 +59,6 @@ export const Service: React.FC = () => {
                       <span tw="text-gray-500"> Perencanaan & dokumentasi teknis</span>
                     </li>
                   </ul>
-                  <Button
-                    text="Learn More"
-                    variant="primary"
-                    tw="mt-6 rounded-full px-8"
-                    external={true}
-                    url="https://wa.link/4l62ek"
-                  />
                 </ContentLeftService>
                 <div>
                   <ContentMobileRight>
@@ -84,7 +77,7 @@ export const Service: React.FC = () => {
                         <div tw="row-span-2 row-start-1">
                           <Image
                             unoptimized={true}
-                            src={'/assets/images/service-photo-3.png'}
+                            src={'/assets/images/service-photo-2.png'}
                             width={150}
                             height={150}
                             layout="fixed"
@@ -94,7 +87,7 @@ export const Service: React.FC = () => {
                         <div tw="row-span-2 row-start-4">
                           <Image
                             unoptimized={true}
-                            src={'/assets/images/service-photo-2.png'}
+                            src={'/assets/images/service-photo-3.png'}
                             width={150}
                             height={150}
                             layout="fixed"
@@ -134,22 +127,13 @@ export const Service: React.FC = () => {
                     </ul>
                   </ContentLeftService>
                   <PartnerWrapper>
-                    <div tw="grid grid-cols-5 grid-rows-2 place-items-start">
+                    <div tw="grid grid-cols-3 grid-rows-2">
                       <div tw="row-span-2">
                         <Image
                           unoptimized={true}
                           src={'/assets/images/service-1.png'}
-                          width={106}
-                          height={110}
-                          layout="fixed"
-                        />
-                      </div>
-                      <div tw="col-span-2">
-                        <Image
-                          unoptimized={true}
-                          src={'/assets/images/service-5.png'}
-                          width={218}
-                          height={50}
+                          width={110}
+                          height={115}
                           layout="fixed"
                         />
                       </div>
@@ -157,17 +141,8 @@ export const Service: React.FC = () => {
                         <Image
                           unoptimized={true}
                           src={'/assets/images/service-2.png'}
-                          width={117}
-                          height={68}
-                          layout="fixed"
-                        />
-                      </div>
-                      <div tw="">
-                        <Image
-                          unoptimized={true}
-                          src={'/assets/images/service-6.png'}
-                          width={98}
-                          height={50}
+                          width={110}
+                          height={58}
                           layout="fixed"
                         />
                       </div>
@@ -184,8 +159,8 @@ export const Service: React.FC = () => {
                         <Image
                           unoptimized={true}
                           src={'/assets/images/service-4.png'}
-                          width={330}
-                          height={68}
+                          width={220}
+                          height={47}
                           layout="fixed"
                         />
                       </div>
@@ -193,7 +168,7 @@ export const Service: React.FC = () => {
                   </PartnerWrapper>
                 </div>
                 <Button
-                  text="Learn More"
+                  text="Contact Us"
                   variant="primary"
                   tw="mt-6 rounded-full px-8"
                   external={true}
@@ -216,7 +191,7 @@ export const Service: React.FC = () => {
                     <div tw="row-span-2 row-start-1">
                       <Image
                         unoptimized={true}
-                        src={'/assets/images/service-photo-3.png'}
+                        src={'/assets/images/service-photo-2.png'}
                         width={210}
                         height={210}
                         layout="fixed"
@@ -226,7 +201,7 @@ export const Service: React.FC = () => {
                     <div tw="row-span-2 row-start-4">
                       <Image
                         unoptimized={true}
-                        src={'/assets/images/service-photo-2.png'}
+                        src={'/assets/images/service-photo-3.png'}
                         width={210}
                         height={210}
                         layout="fixed"
