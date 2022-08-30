@@ -1,5 +1,6 @@
 import { Element } from 'react-scroll'
 import tw, { styled } from 'twin.macro'
+
 import dataSolution from '@jsons/solution.json'
 import SolutionCard from '@/components/Card/Solution'
 import { Container } from '@/components/Layouts'
@@ -35,7 +36,6 @@ export const Solution: React.FC = () => {
             <ContentHead>
               Solutions<span tw="text-secondary">_</span>
             </ContentHead>
-
             <ContentSolutionWrapper>
               {dataSolution.map((dataSolution: { icon: string; title: string; subtitle: string }, i: number) => (
                 <ContentSolution key={i}>
