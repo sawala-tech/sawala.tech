@@ -36,7 +36,6 @@ export const Solution: React.FC = () => {
             <ContentHead>
               Solutions<span tw="text-secondary">_</span>
             </ContentHead>
-
             <ContentSolutionWrapper>
               {dataSolution.map((dataSolution: { icon: string; title: string; subtitle: string }, i: number) => (
                 <ContentSolution key={i}>
