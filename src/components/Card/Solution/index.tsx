@@ -3,7 +3,7 @@ import { FC } from 'react'
 import tw, { styled } from 'twin.macro'
 
 const ContentSolution = styled.div`
-  ${tw`items-center justify-center max-w-[381px] max-h[246px] cursor-default transition ease-in-out delay-100 focus:outline-none hover:scale-110 hover:bg-primary hover:bg-opacity-10 duration-200 bg-gray-50 rounded-xl py-11`}
+  ${tw`items-center justify-center max-w-[381px] max-h-[246px] cursor-default transition ease-in-out delay-100 focus:outline-none hover:scale-110 hover:bg-primary hover:bg-opacity-10 duration-200 bg-gray-50 rounded-xl py-11`}
 `
 
 const Title = styled.div`

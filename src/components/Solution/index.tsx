@@ -1,9 +1,9 @@
 import { Element } from 'react-scroll'
+import { Fragment } from 'react'
 import tw, { styled } from 'twin.macro'
 import dataSolution from '@jsons/solution.json'
 import SolutionCard from '@/components/Card/Solution'
 import { Container } from '@/components/Layouts'
-import { Fragment } from 'react'
 
 const Content = styled.div`
   ${tw`flex flex-col items-center justify-between w-full text-center`}

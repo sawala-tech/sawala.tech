@@ -8,7 +8,7 @@ const Background = styled.div`
   ${tw`bg-gray-50`}
 `
 const Content = styled.div`
-  ${tw`flex flex-col space-y-3 lg:flex-row lg:space-y-0 items-center justify-between w-full py-10 lg:py-16`}
+  ${tw`flex flex-col items-center justify-between w-full py-10 space-y-3 lg:flex-row lg:space-y-0 lg:py-16`}
 `
 const ContentLeft = styled.div`
   ${tw`lg:w-1/2`}
@@ -17,10 +17,10 @@ const ContentLeftService = styled.div`
   ${tw`lg:w-2/3`}
 `
 const ContentRight = styled.div`
-  ${tw`hidden lg:flex justify-center lg:w-1/2`}
+  ${tw`justify-center hidden lg:flex lg:w-1/2`}
 `
 const ContentMobileRight = styled.div`
-  ${tw`flex md:justify-start justify-center lg:hidden lg:w-1/2 py-10`}
+  ${tw`flex justify-center py-10 md:justify-start lg:hidden lg:w-1/2`}
 `
 const PartnerWrapper = styled.div`
   ${tw`sm:w-max lg:w-8/12 mt-[2.125rem]`}
