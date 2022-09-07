@@ -5,7 +5,7 @@ import { Solution } from '@/components/Solution'
 import { Formulir } from '@/components/Formulir'
 import { Technology } from '@/components/Technology'
 import { Client } from '@/components/Client'
-import { Founder } from '@/components/Founder'
+import { Team } from '@/components/Team'
 import { Contact } from '@/components/Contact'
 import { Footer } from '@/components/Footer'
 
@@ -19,7 +19,7 @@ const LandingPage: React.FC = () => {
       <Formulir />
       <Technology />
       <Client />
-      <Founder />
+      <Team />
       <Contact />
       <Footer />
     </>
