@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import tw, { styled } from 'twin.macro'
 import { FC, useEffect, useState } from 'react'
 
@@ -49,7 +48,7 @@ const Team: FC<TeamProps> = ({ image, name, about, link }) => {
         {name}
         <SubTitle>{about}</SubTitle>
 
-        <Link href={link}>
+        <a href={link} target="_blank">
           <Image
             tw="cursor-pointer"
             unoptimized={true}
@@ -58,7 +57,7 @@ const Team: FC<TeamProps> = ({ image, name, about, link }) => {
             width={30}
             height={30}
           />
-        </Link>
+        </a>
       </Title>
     </ContentTeam>
   )

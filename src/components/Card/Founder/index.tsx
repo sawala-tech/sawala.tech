@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { FC, useEffect, useState } from 'react'
 import tw, { styled } from 'twin.macro'
 
@@ -53,7 +52,7 @@ const Founder: FC<FounderProps> = ({ image, name, about, desc, link }) => {
           {about} <br /> {desc}
         </SubTitle>
 
-        <Link href={link}>
+        <a href={link} target="_blank">
           <Image
             tw="cursor-pointer"
             unoptimized={true}
@@ -62,7 +61,7 @@ const Founder: FC<FounderProps> = ({ image, name, about, desc, link }) => {
             width={30}
             height={30}
           />
-        </Link>
+        </a>
       </Title>
     </ContentFounder>
   )
