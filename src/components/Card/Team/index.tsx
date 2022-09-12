@@ -4,13 +4,13 @@ import tw, { styled } from 'twin.macro'
 import { FC, useEffect, useState } from 'react'
 
 const ContentTeam = styled.div`
-  ${tw`pl-5 flex w-full h-[220px] cursor-default transition ease-in-out delay-100 focus:outline-none hover:scale-110 hover:bg-primary hover:bg-opacity-10 duration-200 bg-gray-50 rounded-xl place-items-center`}
+  ${tw`pl-5 flex w-full h-[170px] md:h-[220px] cursor-default transition ease-in-out delay-100 focus:outline-none hover:scale-110 hover:bg-primary hover:bg-opacity-10 duration-200 bg-gray-50 rounded-xl place-items-center`}
 `
 const Title = styled.div`
   ${tw`flex-1 text-xl font-bold text-left text-gray-900 capitalize pl-7`}
 `
 const SubTitle = styled.div`
-  ${tw`text-base font-medium text-gray-500 pb-7`}
+  ${tw`pb-5 text-base font-medium text-gray-500 md:pb-7`}
 `
 
 interface TeamProps {
