@@ -11,7 +11,7 @@ const Title = styled.div`
 `
 
 const SubTitle = styled.div`
-  ${tw`px-2 mx-10 text-base font-normal text-gray-500 md:p-0 lg:px-2`}
+  ${tw`px-2 mx-10 text-base font-normal text-gray-500 md:py-2 lg:px-2`}
 `
 interface SolutionProps {
   image: string
