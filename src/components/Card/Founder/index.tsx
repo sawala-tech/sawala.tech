@@ -25,7 +25,7 @@ const Founder: FC<FounderProps> = ({ image, name, about, desc, link }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 1275) {
+      if (window.innerWidth > 1223) {
         setIsDesktop(true)
       } else {
         setIsDesktop(false)
