@@ -6,8 +6,26 @@ import Button from '@/components/Buttons'
 import FounderCard from '@/components/Card/Founder'
 import TeamCard from '@/components/Card/Team'
 import { Container } from '@/components/Layouts'
+import { useState, useEffect } from 'react'
 
 export const Team: React.FC = () => {
+  const [isClass, setClass] = useState<string>()
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1342) {
+        setClass('grid-cols-3')
+      } else if (window.innerWidth > 1024) {
+        setClass('grid-cols-2')
+      } else if (window.innerWidth < 1024) {
+        setClass('grid-cols-1')
+      } else {
+        setClass('')
+      }
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
   return (
     <>
       <Element name="team" className="element">
@@ -17,7 +35,7 @@ export const Team: React.FC = () => {
               Our Team<span tw="text-secondary">_</span>
             </h1>
 
-            <div className="grid grid-cols-1 gap-4 mb-24 md:grid-cols-2 lg:grid-cols-3">
+            <div className={`grid gap-4 mb-24 ${isClass}`}>
               {dataTeam.map((data: any, i: number) => (
                 <Fragment key={i}>
                   <TeamCard key={i} image={data?.image} name={data?.name} about={data?.about} link={data?.link} />
