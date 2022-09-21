@@ -10,7 +10,7 @@ const Title = styled.h1`
   ${tw`pt-8 text-3xl font-bold`}
 `
 const SubTitle = styled.p`
-  ${tw`pb-10 text-base font-normal pt-7`}
+  ${tw`pb-10 text-base px-2 font-normal pt-7`}
 `
 
 interface ProductProps {

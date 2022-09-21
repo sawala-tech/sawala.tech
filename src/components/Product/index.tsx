@@ -23,7 +23,7 @@ export const Product: React.FC = () => {
       if (window.innerWidth > 686) {
         setClass('grid-cols-2')
       } else {
-        setClass('grid-cols-1')
+        setClass('grid-rows-2')
       }
     }
     handleResize()
@@ -37,7 +37,7 @@ export const Product: React.FC = () => {
           <Container tag={'div'} tw="p-5 md:p-14">
             <Content>
               <ContentHead>Products_</ContentHead>
-              <div className={`grid space-y-24 md:space-y-0 lg:space-x-24 md:space-x-10 ${isClass}`}>
+              <div className={`grid space-y-8 ${isClass}`}>
                 {dataProduct.map((data: any, i: number) => (
                   <Fragment key={i}>
                     <ProductCard
