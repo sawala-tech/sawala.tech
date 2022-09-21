@@ -14,6 +14,8 @@ export const Team: React.FC = () => {
     const handleResize = () => {
       if (window.innerWidth > 1342) {
         setClass('grid-cols-3')
+      } else if (window.innerWidth >= 768) {
+        setClass('grid-cols-2')
       } else if (window.innerWidth > 1024) {
         setClass('grid-cols-2')
       } else if (window.innerWidth < 1024) {
