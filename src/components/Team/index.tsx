@@ -14,8 +14,10 @@ export const Team: React.FC = () => {
     const handleResize = () => {
       if (window.innerWidth > 1342) {
         setClass('grid-cols-3')
-      } else if (window.innerWidth >= 768) {
+      } else if (window.innerWidth > 786) {
         setClass('grid-cols-2')
+      } else if (window.innerWidth < 786) {
+        setClass('grid-cols-1')
       } else if (window.innerWidth > 1024) {
         setClass('grid-cols-2')
       } else if (window.innerWidth < 1024) {
@@ -44,7 +46,7 @@ export const Team: React.FC = () => {
                 </Fragment>
               ))}
 
-              <div tw="place-items-center p-4 hidden md:flex w-full h-[220px] cursor-default transition ease-in-out delay-100 focus:outline-none hover:scale-110 bg-blue-400 duration-200 rounded-xl">
+              <div tw="place-items-center md:order-last lg:order-none p-4 hidden md:flex w-full h-[220px] cursor-default transition ease-in-out delay-100 focus:outline-none hover:scale-110 bg-blue-400 duration-200 rounded-xl">
                 <div className="p-4 text-xl font-medium text-left text-white">
                   <p tw="w-11/12">Accelerate good things with technology</p>
                   <Button
