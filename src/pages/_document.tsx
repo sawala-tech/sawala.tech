@@ -27,7 +27,7 @@ export default class _DOCUMENT extends Document<{
               qchatWidget.src = "https://webchat.qontak.com/js/app.js";
               document.head.prepend(qchatInit);
               document.head.prepend(qchatWidget);
-              qchatInit.onload = function () {qchatInitialize({ id: 'b24e3166-64c1-41c1-893e-230e984dacb6', code: 'wexb92CgFwzD2caRWpUJEA' })};
+              qchatInit.onload = function () {qchatInitialize({ id: '893dca5c-ae42-4005-a334-a9060f8ebe17', code: 'wexb92CgFwzD2caRWpUJEA' })};
           `
             }}
           />
