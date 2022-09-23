@@ -2,6 +2,8 @@ import { Hero } from '@/components/Hero'
 import { About } from '@/components/About'
 import { Service } from '@/components/Service'
 import { Product } from '@/components/Product'
+import { Solution } from '@/components/Solution'
+import { Formulir } from '@/components/Formulir'
 import { Technology } from '@/components/Technology'
 import { Client } from '@/components/Client'
 import { Founder } from '@/components/Founder'
@@ -15,6 +17,8 @@ const LandingPage: React.FC = () => {
       <About />
       <Service />
       <Product />
+      <Solution />
+      <Formulir />
       <Technology />
       <Client />
       <Founder />
