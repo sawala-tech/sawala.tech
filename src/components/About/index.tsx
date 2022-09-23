@@ -3,15 +3,15 @@ import tw, { styled } from 'twin.macro'
 import { Element } from 'react-scroll'
 
 const Content = styled.div`
-  ${tw`flex px-5 flex-col items-center justify-between w-full py-10 lg:px-24 text-center`}
+  ${tw`flex flex-col items-center justify-between w-full px-5 py-10 text-center lg:px-24`}
 `
 
 const ContentHead = styled.h1`
-  ${tw`text-3xl lg:text-4xl font-bold mb-7`}
+  ${tw`text-3xl font-bold lg:text-4xl mb-7`}
 `
 
 const Contentsub = styled.p`
-  ${tw`lg:text-lg xl:text-xl text-gray-500`}
+  ${tw`text-gray-500 lg:text-lg xl:text-xl`}
 `
 
 export const About: React.FC = () => {

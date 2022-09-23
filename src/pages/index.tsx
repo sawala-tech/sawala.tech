@@ -1,10 +1,11 @@
 import { Hero } from '@/components/Hero'
 import { About } from '@/components/About'
 import { Service } from '@/components/Service'
-import { Formulir } from '@/components/Formulir'
+import { Product } from '@/components/Product'
+import { Solution } from '@/components/Solution'
 import { Technology } from '@/components/Technology'
 import { Client } from '@/components/Client'
-import { Founder } from '@/components/Founder'
+import { Team } from '@/components/Team'
 import { Contact } from '@/components/Contact'
 import { Footer } from '@/components/Footer'
 
@@ -14,10 +15,11 @@ const LandingPage: React.FC = () => {
       <Hero />
       <About />
       <Service />
-      <Formulir />
+      <Product />
+      <Solution />
       <Technology />
       <Client />
-      <Founder />
+      <Team />
       <Contact />
       <Footer />
     </>

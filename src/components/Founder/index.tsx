@@ -8,7 +8,7 @@ const Content = styled.div`
   ${tw`flex flex-col items-center justify-between w-full pt-5 lg:pt-16 lg:pb-[5.625rem] text-left lg:text-center`}
 `
 const ContentHead = styled.h1`
-  ${tw`text-3xl lg:text-4xl font-bold mb-7`}
+  ${tw`text-3xl font-bold lg:text-4xl mb-7`}
 `
 const ContentGalery = styled.div`
   ${tw`flex flex-col -space-y-2 md:space-y-0 w-full mt-2 lg:mt-[3.75rem] md:grid md:grid-cols-2 lg:text-left`}

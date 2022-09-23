@@ -63,7 +63,7 @@ export const DefaultModal: React.FunctionComponent<DefaultModal & React.HTMLAttr
               leave="ease-in duration-200"
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 -scale-y-95">
-              <div className="inline-block w-full h-screen overflow-hidden align-middle z-50">
+              <div className="z-50 inline-block w-full h-screen overflow-hidden align-middle">
                 <header className={`absolute w-full ${scrolled ? 'py-3 lg:py-5' : ' py-5 lg:py-10'}`}>
                   <div tw="px-5 lg:mx-auto lg:w-11/12 lg:px-14 flex justify-end">
                     {closeButton && (
