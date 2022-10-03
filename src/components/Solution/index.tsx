@@ -1,9 +1,9 @@
+import { useSolution } from '@hooks/useSolution'
+import { Fragment } from 'react'
 import { Element } from 'react-scroll'
 import tw, { styled } from 'twin.macro'
-import dataSolution from '@jsons/solution.json'
 import SolutionCard from '@/components/Card/Solution'
 import { Container } from '@/components/Layouts'
-import { Fragment } from 'react'
 
 const Content = styled.div`
   ${tw`flex flex-col items-center justify-between w-full text-center`}
@@ -16,6 +16,8 @@ const ContentSolutionWrapper = styled.div`
 `
 
 export const Solution: React.FC = () => {
+  const { dataSolution, isLoadingSolution } = useSolution(`solutions?populate=*`)
+
   return (
     <>
       <Element name="solution" className="element">
@@ -25,11 +27,19 @@ export const Solution: React.FC = () => {
               Solutions<span tw="text-secondary">_</span>
             </ContentHead>
             <ContentSolutionWrapper>
-              {dataSolution.map((data: any, i: number) => (
-                <Fragment key={i}>
-                  <SolutionCard key={i} image={data?.icon} title={data?.title} subtitle={data?.subtitle} />
-                </Fragment>
-              ))}
+              {!isLoadingSolution && (
+                <>
+                  {dataSolution?.data.map((data: any, i: number) => (
+                    <Fragment key={i}>
+                      <SolutionCard
+                        image={data?.attributes?.icon?.data?.attributes?.url}
+                        title={data?.attributes?.title}
+                        subtitle={data?.attributes.description}
+                      />
+                    </Fragment>
+                  ))}
+                </>
+              )}
             </ContentSolutionWrapper>
           </Content>
         </Container>
