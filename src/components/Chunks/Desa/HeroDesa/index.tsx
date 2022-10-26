@@ -4,14 +4,17 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import tw, { styled } from 'twin.macro'
 const Heading = styled.h1`
-  ${tw`h-full pb-2 text-3xl font-bold text-gray-600 lg:text-5xl`}
+  ${tw`h-full pb-2 text-2xl font-bold text-gray-600 lg:text-5xl`}
   background: linear-gradient(90deg, #0161E7 -3.51%, #FC0C47 46%, #F68F11 75.16%, #FB0246 102.12%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  -webkit-text-stroke: 1.5px black;
+  -webkit-text-stroke: 0.5px black;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  @media (min-width: 720px) {
+    -webkit-text-stroke: 1.5px black;
+  }
 `
 
 const Main = styled.div`
@@ -50,8 +53,8 @@ export const HeroDesa: React.FC = () => {
               <Image
                 src={'/assets/images/logodesa.png'}
                 layout={'fixed'}
-                width={isDesktop ? 86 : 56}
-                height={isDesktop ? 71 : 44}
+                width={isDesktop ? 86 : 50}
+                height={isDesktop ? 71 : 40}
               />
               <Heading>Desa Langonsari</Heading>
             </div>
