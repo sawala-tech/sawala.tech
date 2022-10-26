@@ -1,14 +1,5 @@
-import { Hero } from '@/components/Hero'
-import { About } from '@/components/About'
-import { Service } from '@/components/Service'
-import { Solution } from '@/components/Solution'
-import { Product } from '@/components/Product'
-import { Technology } from '@/components/Technology'
-import { Client } from '@/components/Client'
-import { Team } from '@/components/Team'
-import { Contact } from '@/components/Contact'
+import { Hero, About, Service, Technology, Contact, Client, Product, Solution, Team } from '@/components/Chunks/Home'
 import { Footer } from '@/components/Footer'
-
 const LandingPage: React.FC = () => {
   return (
     <>
