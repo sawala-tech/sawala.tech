@@ -9,6 +9,7 @@ const A = styled.a`
 `
 
 import { FC } from 'react'
+import { useRouter } from 'next/router'
 interface LinkProps {
   withScrolled?: boolean
 }
@@ -30,7 +31,7 @@ export const Navbar: FC<LinkProps> = ({ withScrolled = true }) => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
   }, [])
-
+  const router = useRouter()
   return (
     <>
       <header
@@ -42,8 +43,13 @@ export const Navbar: FC<LinkProps> = ({ withScrolled = true }) => {
             : 'bg-white py-3 lg:py-5 shadow-md transition-all duration-700'
         }`}>
         <Container tag="nav" tw="flex items-center justify-between">
-          <div tw="relative w-[155px] h-auto flex justify-start p-5">
-            <Image unoptimized={true} src={'/assets/images/logo-sawala-tech(new).svg'} layout={'fill'} />
+          <div tw="relative w-[155px] h-auto flex justify-start p-5 cursor-pointer">
+            <Image
+              unoptimized={true}
+              src={'/assets/images/logo-sawala-tech(new).svg'}
+              layout={'fill'}
+              onClick={() => router?.push('/')}
+            />
           </div>
           <div tw="w-11/12">
             <ul tw="relative w-auto h-auto flex items-center p-2 ">

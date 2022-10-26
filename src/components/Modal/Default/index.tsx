@@ -1,4 +1,4 @@
-import Links from '@/components/Card/Link'
+import Links from '@/components/Link'
 import { Dialog, Transition } from '@headlessui/react'
 import dataLinks from '@jsons/links.json'
 import { useRouter } from 'next/router'
@@ -97,10 +97,10 @@ export const DefaultModal: React.FunctionComponent<DefaultModal & React.HTMLAttr
                         }}
                         offset={dataLinks.offset}></Links>
                     ))}
-                    <Link href="/desa/desa-langonsari">
+                    <Link href="/desa-langonsari">
                       <span
                         className={`text-white text-3xl cursor-pointer ${router?.asPath?.includes('desa') && 'font-bold'}`}>
-                        Desa
+                        Desa Langonsari
                       </span>
                     </Link>
                   </div>
