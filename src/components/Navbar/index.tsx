@@ -8,7 +8,12 @@ const A = styled.a`
   ${tw`flex px-5 my-3 text-base font-normal tracking-wider text-[#011154]`}
 `
 
-export const Navbar: React.FC = () => {
+import { FC } from 'react'
+interface LinkProps {
+  withScrolled?: boolean
+}
+
+export const Navbar: FC<LinkProps> = ({ withScrolled = true }) => {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [dropdown, setDropdown] = useState(false)
@@ -30,9 +35,11 @@ export const Navbar: React.FC = () => {
     <>
       <header
         className={`fixed top-0 z-30 w-full ${
-          scrolled
-            ? 'bg-white py-3 lg:py-5 shadow-md transition-all duration-700'
-            : 'transition-all duration-500 py-5 lg:py-10'
+          withScrolled
+            ? scrolled
+              ? 'bg-white py-3 lg:py-5 shadow-md transition-all duration-700'
+              : 'transition-all duration-500 py-5 lg:py-10'
+            : 'bg-white py-3 lg:py-5 shadow-md transition-all duration-700'
         }`}>
         <Container tag="nav" tw="flex items-center justify-between">
           <div tw="relative w-[155px] h-auto flex justify-start p-5">

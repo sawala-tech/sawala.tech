@@ -26,9 +26,6 @@ const ContentGaleryItems = styled.div`
 
 export const Client: React.FC = () => {
   const { dataClient, isLoadingClient } = useClient(`featured-client?populate=Component.image`)
-  console.log(
-    dataClient?.data?.attributes?.Component?.map((items: any) => items?.image?.data?.attributes?.formats?.thumbnail?.url)
-  )
   return (
     <>
       <Element name="client" className="element">
