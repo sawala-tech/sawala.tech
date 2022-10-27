@@ -63,18 +63,18 @@ export const HeroDesa: React.FC = () => {
               Provinsi Jawa Barat, Kode Pos 40376
             </p>
             <div tw="flex space-y-3 flex-col md:flex-row md:space-x-3 md:space-y-0 ">
-              <div tw="flex space-x-1 md:space-x-2 items-center">
+              <a href="tel:02287800000" tw="flex space-x-1 md:space-x-2 items-center">
                 <IconPhone />
                 <p tw="text-gray-700 md:text-lg">02287800000</p>
-              </div>
-              <div tw="flex space-x-1 md:space-x-2 items-center">
+              </a>
+              <a href="mailto:info@langonsari.id" tw="flex space-x-1 md:space-x-2 items-center">
                 <IconMail />
                 <p tw="text-gray-700 md:text-lg">info@langonsari.id</p>
-              </div>
-              <div tw="flex space-x-1 md:space-x-2 items-center">
+              </a>
+              <a href="https://langonsari.id" target="_blank" rel="noreferrer" tw="flex space-x-1 md:space-x-2 items-center">
                 <IconGLobe />
                 <p tw="text-gray-700 md:text-lg">www.langonsari.id</p>
-              </div>
+              </a>
             </div>
           </div>
           <div tw="absolute top-20 -right-20 hidden md:block">
