@@ -1,8 +1,6 @@
 import Links from '@/components/Link'
 import { Dialog, Transition } from '@headlessui/react'
 import dataLinks from '@jsons/links.json'
-import { useRouter } from 'next/router'
-import Link from 'next/link'
 import { Fragment, useEffect, useState } from 'react'
 import { X } from 'react-feather'
 
@@ -40,7 +38,6 @@ export const DefaultModal: React.FunctionComponent<DefaultModal & React.HTMLAttr
     }
   }, [open])
 
-  const router = useRouter()
   return (
     <>
       <Transition appear show={isOpen} as={Fragment}>
@@ -97,12 +94,6 @@ export const DefaultModal: React.FunctionComponent<DefaultModal & React.HTMLAttr
                         }}
                         offset={dataLinks.offset}></Links>
                     ))}
-                    <Link href="/desa-langonsari">
-                      <span
-                        className={`text-white text-3xl cursor-pointer ${router?.asPath?.includes('desa') && 'font-bold'}`}>
-                        Desa Langonsari
-                      </span>
-                    </Link>
                   </div>
                 </div>
               </div>
