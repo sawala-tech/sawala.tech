@@ -31,6 +31,13 @@ export default class _DOCUMENT extends Document<{
           `
             }}
           /> */}
+          {/* <!-- Google tag (gtag.js) --> */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-KTD8Y5H7NV"></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-KTD8Y5H7NV');`
+            }}
+          />
         </Head>
         <body>
           <Main />
